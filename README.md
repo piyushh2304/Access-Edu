@@ -1,6 +1,6 @@
 # 🎓 AccessEdu - Advanced Learning Management System
 
-![AccessEdu Banner](https://via.placeholder.com/1200x400.png?text=AccessEdu+Learning+Platform)
+![AccessEdu Banner](client/public/assets/banner.png)
 
 **AccessEdu** is a comprehensive, full-stack Learning Management System (LMS) designed to democratize education. It provides a seamless experience for students to consume content and for instructors to manage courses, assessments, and student progress. Built with modern web technologies, it ensures performance, scalability, and an intuitive user interface.
 
