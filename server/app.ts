@@ -21,7 +21,7 @@ app.use(cookieParser());
 // cors => cors origin resource sharing
 app.use(
   cors({
-    origin: process.env.ORIGIN ? JSON.parse(process.env.ORIGIN) : ["http://localhost:3000"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://access-edu.vercel.app", "https://access-edu.vercel.app"],
     credentials: true,
   })
 );
