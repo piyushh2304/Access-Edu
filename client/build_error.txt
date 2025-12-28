@@ -1,0 +1,10470 @@
+﻿
+> client@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.1
+  - Environments: .env
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" "C:
+\Users\piyus\AppData\
+Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (:String   
+ ) [], RemoteExce    
+ption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+Failed to compile.
+
+./app/about/About.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`About.tsx` to same 
+directory as 
+`../styles/styles` 
+or consider making 
+`../styles/styles` a 
+package.  import/no-r
+elative-parent-import
+s
+5:16  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/about/page.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as 
+`../utils/Heading` 
+or consider making 
+`../utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: `../compo
+nents/Header` import 
+should occur before 
+import of 
+`../utils/Heading`  
+import/order
+4:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Header` or 
+consider making `../c
+omponents/Header` a 
+package.  import/no-r
+elative-parent-import
+s
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: `../compo
+nents/Footer` import 
+should occur before 
+import of 
+`../utils/Heading`  
+import/order
+6:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Footer` or 
+consider making `../c
+omponents/Footer` a 
+package.  import/no-r
+elative-parent-import
+s
+10:15  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+12:22  Error: 
+'setActiveItem' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/admin/categorie
+s/page.tsx
+1:28  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Custo
+mization/EditCategori
+es` or consider 
+making `@/app/compone
+nts/Admin/Customizati
+on/EditCategories` a 
+package.  import/no-r
+elative-parent-import
+s
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/courses/p
+age.tsx
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Cours
+e/AllCourses` or 
+consider making `@/ap
+p/components/Admin/Co
+urse/AllCourses` a 
+package.  import/no-r
+elative-parent-import
+s
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/courses-a
+nalytics/page.tsx
+1:29  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Analy
+tics/CourseAnalytics`
+ or consider making `
+@/app/components/Admi
+n/Analytics/CourseAna
+lytics` a package.  i
+mport/no-relative-par
+ent-imports
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/create-co
+urse/page.tsx
+1:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Cours
+e/CreateCourse` or 
+consider making `@/ap
+p/components/Admin/Co
+urse/CreateCourse` a 
+package.  import/no-r
+elative-parent-import
+s
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+5:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/components/Admin/C
+ourse/CreateCourse`  
+import/order
+9:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/edit-cour
+se/[id]/page.tsx
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Cours
+e/EditCourse` or 
+consider making `@/ap
+p/components/Admin/Co
+urse/EditCourse` a 
+package.  import/no-r
+elative-parent-import
+s
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+6:6  Error: 'Props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/faq/page.
+tsx
+1:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Custo
+mization/EditFaq` or 
+consider making `@/ap
+p/components/Admin/Cu
+stomization/EditFaq` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/hero/page
+.tsx
+1:22  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Custo
+mization/EditHero` 
+or consider making `@
+/app/components/Admin
+/Customization/EditHe
+ro` a package.  impor
+t/no-relative-parent-
+imports
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/invoices/
+page.tsx
+1:25  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Order
+/AllInvoices` or 
+consider making `@/ap
+p/components/Admin/Or
+der/AllInvoices` a 
+package.  import/no-r
+elative-parent-import
+s
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/order-ana
+lytics/page.tsx
+1:29  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Analy
+tics/OrdersAnalytics`
+ or consider making `
+@/app/components/Admi
+n/Analytics/OrdersAna
+lytics` a package.  i
+mport/no-relative-par
+ent-imports
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/page.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `react` 
+import should occur 
+after import of 
+`next/dynamic`  
+import/order
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: 
+`../utils/Heading` 
+import should occur 
+after import of `../h
+ooks/adminProtected` 
+ import/order
+3:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as 
+`../utils/Heading` 
+or consider making 
+`../utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Loader` or 
+consider making `../c
+omponents/Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+6:28  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../hook
+s/adminProtected` or 
+consider making `../h
+ooks/adminProtected` 
+a package.  import/no
+-relative-parent-impo
+rts
+9:16  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Admin/sidebar/
+AdminSidebar` or 
+consider making `../c
+omponents/Admin/sideb
+ar/AdminSidebar` a 
+package.  import/no-r
+elative-parent-import
+s
+16:16  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Admin/Dashboar
+dHero` or consider 
+making `../components
+/Admin/DashboardHero`
+ a package.  import/n
+o-relative-parent-imp
+orts
+24:15  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+
+./app/admin/team/page
+.tsx
+1:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:22  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Users
+/AllUsers` or 
+consider making `@/ap
+p/components/Admin/Us
+ers/AllUsers` a 
+package.  import/no-r
+elative-parent-import
+s
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/user-anal
+ytics/page.tsx
+1:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Analy
+tics/UsersAnalytics` 
+or consider making `@
+/app/components/Admin
+/Analytics/UsersAnaly
+tics` a package.  imp
+ort/no-relative-paren
+t-imports
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/admin/users/pag
+e.tsx
+1:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/AdminSidebar` or 
+consider making `@/ap
+p/components/Admin/si
+debar/AdminSidebar` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/sideb
+ar/DashboardHero` or 
+consider making `@/ap
+p/components/Admin/si
+debar/DashboardHero` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:22  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Admin/Users
+/AllUsers` or 
+consider making `@/ap
+p/components/Admin/Us
+ers/AllUsers` a 
+package.  import/no-r
+elative-parent-import
+s
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/u
+tils/Heading` or 
+consider making `@/ap
+p/utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+8:15  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Acce
+ssibility/Accessibili
+tyButton.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: `../../co
+ntexts/AccessibilityP
+rovider` import 
+should occur before 
+import of `./Accessib
+ilitySettings`  
+import/order
+7:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Acc
+essibilityButton.tsx`
+ to same directory 
+as `../../contexts/Ac
+cessibilityProvider` 
+or consider making `.
+./../contexts/Accessi
+bilityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: `../../ho
+oks/useKeyboardShortc
+uts` import should 
+occur before import 
+of `./AccessibilitySe
+ttings`  import/order
+8:38  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Acc
+essibilityButton.tsx`
+ to same directory 
+as `../../hooks/useKe
+yboardShortcuts` or 
+consider making `../.
+./hooks/useKeyboardSh
+ortcuts` a package.  
+import/no-relative-pa
+rent-imports
+
+./app/components/Acce
+ssibility/Accessibili
+tyFeaturesDescription
+.tsx
+3:17  Error: 
+'useState' is 
+defined but never 
+used.  no-unused-vars
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+4:91  Error: 'Eye' 
+is defined but never 
+used.  no-unused-vars
+5:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Acc
+essibilityFeaturesDes
+cription.tsx` to 
+same directory as `..
+/../SpeechProvider` 
+or consider making `.
+./../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+
+./app/components/Acce
+ssibility/Accessibili
+tySettings.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Acc
+essibilitySettings.ts
+x` to same directory 
+as `../../contexts/Ac
+cessibilityProvider` 
+or consider making `.
+./../contexts/Accessi
+bilityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Acce
+ssibility/Confirmatio
+nDialog.tsx
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+
+./app/components/Acce
+ssibility/ContentAcce
+ssibility.tsx
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Con
+tentAccessibility.tsx
+` to same directory 
+as `../../contexts/Ac
+cessibilityProvider` 
+or consider making `.
+./../contexts/Accessi
+bilityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Acce
+ssibility/ErrorMessag
+e.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+5:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ErrorMessage.tsx` 
+to same directory as 
+`../../contexts/Acces
+sibilityProvider` or 
+consider making `../.
+./contexts/Accessibil
+ityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Acce
+ssibility/GlobalAcces
+sibility.tsx
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:38  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Glo
+balAccessibility.tsx`
+ to same directory 
+as `../../hooks/useKe
+yboardShortcuts` or 
+consider making `../.
+./hooks/useKeyboardSh
+ortcuts` a package.  
+import/no-relative-pa
+rent-imports
+5:1  Error: `../../ho
+oks/useClickAssistanc
+e` import should 
+occur before import 
+of `../../hooks/useKe
+yboardShortcuts`  
+import/order
+5:36  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Glo
+balAccessibility.tsx`
+ to same directory 
+as `../../hooks/useCl
+ickAssistance` or 
+consider making `../.
+./hooks/useClickAssis
+tance` a package.  im
+port/no-relative-pare
+nt-imports
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: `../../co
+ntexts/AccessibilityP
+rovider` import 
+should occur before 
+import of `../../hook
+s/useKeyboardShortcut
+s`  import/order
+6:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Glo
+balAccessibility.tsx`
+ to same directory 
+as `../../contexts/Ac
+cessibilityProvider` 
+or consider making `.
+./../contexts/Accessi
+bilityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:1  Error: `./Conte
+ntAccessibility` 
+import should occur 
+before import of 
+`./ReadingMode`  
+import/order
+11:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:1  Error: `../../h
+ooks/useConfirmationD
+ialog` import should 
+occur before import 
+of `../../hooks/useKe
+yboardShortcuts`  
+import/order
+11:39  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Glo
+balAccessibility.tsx`
+ to same directory 
+as `../../hooks/useCo
+nfirmationDialog` or 
+consider making `../.
+./hooks/useConfirmati
+onDialog` a package. 
+ import/no-relative-p
+arent-imports
+12:1  Error: `./Confi
+rmationDialog` 
+import should occur 
+before import of 
+`./ReadingMode`  
+import/order
+
+./app/components/Acce
+ssibility/KeyboardSho
+rtcutsHelp.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+5:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Key
+boardShortcutsHelp.ts
+x` to same directory 
+as `../../contexts/Ac
+cessibilityProvider` 
+or consider making `.
+./../contexts/Accessi
+bilityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+6:38  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Key
+boardShortcutsHelp.ts
+x` to same directory 
+as `../../hooks/useKe
+yboardShortcuts` or 
+consider making `../.
+./hooks/useKeyboardSh
+ortcuts` a package.  
+import/no-relative-pa
+rent-imports
+230:29  Error: '_' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Acce
+ssibility/ReadingMode
+.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+4:10  Error: 
+'BookOpen' is 
+defined but never 
+used.  no-unused-vars
+4:20  Error: 'Eye' 
+is defined but never 
+used.  no-unused-vars
+4:25  Error: 
+'EyeOff' is defined 
+but never used.  
+no-unused-vars
+5:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ReadingMode.tsx` to 
+same directory as `..
+/../contexts/Accessib
+ilityProvider` or 
+consider making `../.
+./contexts/Accessibil
+ityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+8:70  Error: 
+'updateSetting' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/components/Acce
+ssibility/SimplifiedU
+I.tsx
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`SimplifiedUI.tsx` 
+to same directory as 
+`../../contexts/Acces
+sibilityProvider` or 
+consider making `../.
+./contexts/Accessibil
+ityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+7:29  Error: 'hideNon
+EssentialElements' 
+is assigned a value 
+but never used.  
+no-unused-vars
+
+./app/components/Acce
+ssibility/SimplifiedU
+IMode.tsx
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Sim
+plifiedUIMode.tsx` 
+to same directory as 
+`../../contexts/Acces
+sibilityProvider` or 
+consider making `../.
+./contexts/Accessibil
+ityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+59:22  Error: React 
+Hook "useCallback" 
+is called 
+conditionally. React 
+Hooks must be called 
+in the exact same 
+order in every 
+component render.  re
+act-hooks/rules-of-ho
+oks
+77:22  Error: React 
+Hook "useCallback" 
+is called 
+conditionally. React 
+Hooks must be called 
+in the exact same 
+order in every 
+component render.  re
+act-hooks/rules-of-ho
+oks
+88:22  Error: React 
+Hook "useCallback" 
+is called 
+conditionally. React 
+Hooks must be called 
+in the exact same 
+order in every 
+component render.  re
+act-hooks/rules-of-ho
+oks
+111:3  Error: React 
+Hook "useEffect" is 
+called 
+conditionally. React 
+Hooks must be called 
+in the exact same 
+order in every 
+component render. 
+Did you accidentally 
+call a React Hook 
+after an early 
+return?  react-hooks/
+rules-of-hooks
+
+./app/components/Acce
+ssibility/StickyKeysI
+ndicator.tsx
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Sti
+ckyKeysIndicator.tsx`
+ to same directory 
+as `../../contexts/Ac
+cessibilityProvider` 
+or consider making `.
+./../contexts/Accessi
+bilityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Acce
+ssibility/TimeManagem
+ent.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+5:35  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`TimeManagement.tsx` 
+to same directory as 
+`../../hooks/useTimeM
+anagement` or 
+consider making `../.
+./hooks/useTimeManage
+ment` a package.  imp
+ort/no-relative-paren
+t-imports
+6:1  Error: `../../co
+ntexts/AccessibilityP
+rovider` import 
+should occur before 
+import of `../../hook
+s/useTimeManagement` 
+ import/order
+6:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`TimeManagement.tsx` 
+to same directory as 
+`../../contexts/Acces
+sibilityProvider` or 
+consider making `../.
+./contexts/Accessibil
+ityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Acce
+ssibility/UndoRedoCon
+trols.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+5:36  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Und
+oRedoControls.tsx` 
+to same directory as 
+`../../hooks/useError
+Prevention` or 
+consider making `../.
+./hooks/useErrorPreve
+ntion` a package.  im
+port/no-relative-pare
+nt-imports
+6:38  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Und
+oRedoControls.tsx` 
+to same directory as 
+`../../hooks/useKeybo
+ardShortcuts` or 
+consider making `../.
+./hooks/useKeyboardSh
+ortcuts` a package.  
+import/no-relative-pa
+rent-imports
+7:1  Error: `../../co
+ntexts/AccessibilityP
+rovider` import 
+should occur before 
+import of `../../hook
+s/useErrorPrevention`
+  import/order
+7:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Und
+oRedoControls.tsx` 
+to same directory as 
+`../../contexts/Acces
+sibilityProvider` or 
+consider making `../.
+./contexts/Accessibil
+ityProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Admi
+n/Analytics/CourseAna
+lytics.tsx
+2:17  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+12:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+12:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseAnalytics.tsx` to 
+same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+13:1  Error: `@/redux
+/features/analytics/a
+nalyticsApi` import 
+should occur before 
+import of 
+`../../Loader`  
+import/order
+13:45  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseAnalytics.tsx` to 
+same directory as `@/
+redux/features/analyt
+ics/analyticsApi` or 
+consider making `@/re
+dux/features/analytic
+s/analyticsApi` a 
+package.  import/no-r
+elative-parent-import
+s
+14:1  Error: `@/app/s
+tyles/styles` import 
+should occur before 
+import of 
+`../../Loader`  
+import/order
+14:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseAnalytics.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+15:1  Error: `@/app/h
+ooks/useSpeechOnHover
+` import should 
+occur before import 
+of `../../Loader`  
+import/order
+15:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseAnalytics.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+19:26  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+20:28  Error: 
+'isError' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/components/Admi
+n/Analytics/OrdersAna
+lytics.tsx
+2:17  Error: 
+'useEffect' is 
+defined but never 
+used.  no-unused-vars
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Ord
+ersAnalytics.tsx` to 
+same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+14:1  Error: `@/redux
+/features/analytics/a
+nalyticsApi` import 
+should occur before 
+import of 
+`../../Loader`  
+import/order
+14:44  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Ord
+ersAnalytics.tsx` to 
+same directory as `@/
+redux/features/analyt
+ics/analyticsApi` or 
+consider making `@/re
+dux/features/analytic
+s/analyticsApi` a 
+package.  import/no-r
+elative-parent-import
+s
+15:1  Error: `@/app/s
+tyles/styles` import 
+should occur before 
+import of 
+`../../Loader`  
+import/order
+15:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Ord
+ersAnalytics.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+16:1  Error: `@/app/h
+ooks/useSpeechOnHover
+` import should 
+occur before import 
+of `../../Loader`  
+import/order
+16:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Ord
+ersAnalytics.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Admi
+n/Analytics/UsersAnal
+ytics.tsx
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:3  Error: 
+'BarChart' is 
+defined but never 
+used.  no-unused-vars
+5:3  Error: 'Bar' is 
+defined but never 
+used.  no-unused-vars
+8:3  Error: 'Label' 
+is defined but never 
+used.  no-unused-vars
+10:3  Error: 
+'LabelList' is 
+defined but never 
+used.  no-unused-vars
+15:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+15:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`UsersAnalytics.tsx` 
+to same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+16:1  Error: `@/redux
+/features/analytics/a
+nalyticsApi` import 
+should occur before 
+import of 
+`../../Loader`  
+import/order
+16:42  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`UsersAnalytics.tsx` 
+to same directory as 
+`@/redux/features/ana
+lytics/analyticsApi` 
+or consider making `@
+/redux/features/analy
+tics/analyticsApi` a 
+package.  import/no-r
+elative-parent-import
+s
+17:1  Error: `@/app/s
+tyles/styles` import 
+should occur before 
+import of 
+`../../Loader`  
+import/order
+17:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`UsersAnalytics.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+18:1  Error: `@/app/h
+ooks/useSpeechOnHover
+` import should 
+occur before import 
+of `../../Loader`  
+import/order
+18:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`UsersAnalytics.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+38:28  Error: 
+'isError' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/components/Admi
+n/Course/AllCourses.t
+sx
+2:42  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+4:1  Error: 
+`@mui/material` 
+import should occur 
+before import of 
+`react`  import/order
+4:36  Error: Unable 
+to resolve path to 
+module 
+'@mui/material'.  
+import/no-unresolved
+5:1  Error: 
+`@mui/x-data-grid` 
+import should occur 
+before import of 
+`react`  import/order
+6:1  Error: 
+`next-themes` import 
+should occur before 
+import of `react`  
+import/order
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:8  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllCourses.tsx` to 
+same directory as `@/
+redux/features/course
+s/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+12:8  Error: 
+'Loader' is defined 
+but never used.  
+no-unused-vars
+12:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllCourses.tsx` to 
+same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+13:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: `../../A
+dmin/TableSkeleton` 
+import should occur 
+before import of 
+`../../Loader`  
+import/order
+13:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllCourses.tsx` to 
+same directory as `..
+/../Admin/TableSkelet
+on` or consider 
+making `../../Admin/T
+ableSkeleton` a 
+package.  import/no-r
+elative-parent-import
+s
+14:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+14:1  Error: 
+`timeago.js` import 
+should occur before 
+import of `@/redux/fe
+atures/courses/course
+Api`  import/order
+15:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+15:1  Error: `@/app/s
+tyles/styles` import 
+should occur before 
+import of `@/redux/fe
+atures/courses/course
+Api`  import/order
+15:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllCourses.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+16:1  Error: 
+`react-hot-toast` 
+import should occur 
+before import of 
+`react-icons/ai`  
+import/order
+17:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+17:1  Error: 
+`next/link` import 
+should occur before 
+import of `react`  
+import/order
+18:1  Error: `@/app/h
+ooks/useSpeechOnHover
+` import should 
+occur before import 
+of `@/redux/features/
+courses/courseApi`  
+import/order
+18:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllCourses.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+22:32  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+23:18  Error: 
+'setTheme' is 
+assigned a value but 
+never used.  
+no-unused-vars
+26:28  Error: 
+'error' is assigned 
+a value but never 
+used.  no-unused-vars
+48:25  Error: React 
+Hook 
+"useSpeechOnHover" 
+is called in 
+function 
+"renderCell" that is 
+neither a React 
+function component 
+nor a custom React 
+Hook function. React 
+component names must 
+start with an 
+uppercase letter. 
+React Hook names 
+must start with the 
+word "use".  react-ho
+oks/rules-of-hooks
+68:27  Error: React 
+Hook 
+"useSpeechOnHover" 
+is called in 
+function 
+"renderCell" that is 
+neither a React 
+function component 
+nor a custom React 
+Hook function. React 
+component names must 
+start with an 
+uppercase letter. 
+React Hook names 
+must start with the 
+word "use".  react-ho
+oks/rules-of-hooks
+117:6  Warning: 
+React Hook useEffect 
+has a missing 
+dependency: 
+'refetch'. Either 
+include it or remove 
+the dependency 
+array.  react-hooks/e
+xhaustive-deps
+186:15  Warning: 
+aria-labeleby: This 
+attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-labelledby?  
+jsx-a11y/aria-props
+187:15  Warning: 
+aria-describedy: 
+This attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-describedby?  
+jsx-a11y/aria-props
+
+./app/components/Admi
+n/Course/CourseConten
+t.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseContent.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:31  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+9:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseContent.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+14:15  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+16:26  Error: 
+'courseContentData' 
+is defined but never 
+used.  no-unused-vars
+209:28  Error: 
+'courseContentData' 
+is defined but never 
+used.  no-unused-vars
+210:28  Error: 
+'index' is defined 
+but never used.  
+no-unused-vars
+211:24  Error: 
+'index' is defined 
+but never used.  
+no-unused-vars
+211:39  Error: 
+'linkIndex' is 
+defined but never 
+used.  no-unused-vars
+212:21  Error: 
+'index' is defined 
+but never used.  
+no-unused-vars
+213:25  Error: 
+'item' is defined 
+but never used.  
+no-unused-vars
+434:31  Error: 'e' 
+is defined but never 
+used.  no-unused-vars
+449:28  Error: 
+'courseContentData' 
+is defined but never 
+used.  no-unused-vars
+450:24  Error: 
+'index' is defined 
+but never used.  
+no-unused-vars
+450:39  Error: 
+'linkIndex' is 
+defined but never 
+used.  no-unused-vars
+
+./app/components/Admi
+n/Course/CourseData.t
+sx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseData.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:21  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseData.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+9:17  Error: 
+'benefits' is 
+defined but never 
+used.  no-unused-vars
+11:22  Error: 
+'prerequisites' is 
+defined but never 
+used.  no-unused-vars
+13:15  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+138:27  Error: 
+'index' is defined 
+but never used.  
+no-unused-vars
+138:42  Error: 
+'value' is defined 
+but never used.  
+no-unused-vars
+161:32  Error: 
+'index' is defined 
+but never used.  
+no-unused-vars
+161:47  Error: 
+'value' is defined 
+but never used.  
+no-unused-vars
+
+./app/components/Admi
+n/Course/CourseInform
+ation.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseInformation.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+2:42  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+3:37  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseInformation.tsx` 
+to same directory as 
+`@/redux/features/lay
+out/layoutApi` or 
+consider making `@/re
+dux/features/layout/l
+ayoutApi` a package. 
+ import/no-relative-p
+arent-imports
+4:1  Error: `@/app/ho
+oks/useSpeechOnHover`
+ import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseInformation.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+8:19  Error: 
+'courseInfo' is 
+defined but never 
+used.  no-unused-vars
+10:15  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+58:24  Error: 'e' is 
+defined but never 
+used.  no-unused-vars
+295:15  Warning: 
+Using `<img>` could 
+result in slower LCP 
+and higher 
+bandwidth. Consider 
+using `<Image />` 
+from `next/image` to 
+automatically 
+optimize images. 
+This may incur 
+additional usage or 
+cost from your 
+provider. See: https:
+//nextjs.org/docs/mes
+sages/no-img-element 
+ @next/next/no-img-el
+ement
+
+./app/components/Admi
+n/Course/CourseOption
+s.tsx
+1:21  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseOptions.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+7:17  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+39:17  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+
+./app/components/Admi
+n/Course/CoursePrevie
+w.tsx
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CoursePreview.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CoursePreview.tsx` 
+to same directory as 
+`@/app/utils/CoursePl
+ayer` or consider 
+making `@/app/utils/C
+oursePlayer` a 
+package.  import/no-r
+elative-parent-import
+s
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CoursePreview.tsx` 
+to same directory as 
+`@/app/utils/Ratings`
+ or consider making `
+@/app/utils/Ratings` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+4:21  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: 
+`react-icons/io` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+6:1  Error: `@/app/ho
+oks/useSpeechOnHover`
+ import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+6:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CoursePreview.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+10:15  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+
+./app/components/Admi
+n/Course/CreateCourse
+.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: 
+`./CourseData` 
+import should occur 
+before import of `./C
+ourseInformation`  
+import/order
+6:1  Error: 
+`./CourseContent` 
+import should occur 
+before import of `./C
+ourseInformation`  
+import/order
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: `@/redux/
+features/courses/cour
+seApi` import should 
+occur before import 
+of `./CourseInformati
+on`  import/order
+8:41  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CreateCourse.tsx` 
+to same directory as 
+`@/redux/features/cou
+rses/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+9:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react`  import/order
+10:1  Error: 
+`react-hot-toast` 
+import should occur 
+before import of `./C
+ourseInformation`  
+import/order
+14:23  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+110:37  Error: 'e' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Admi
+n/Course/EditCourse.t
+sx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: 
+`./CourseData` 
+import should occur 
+before import of `./C
+ourseInformation`  
+import/order
+6:1  Error: 
+`./CourseContent` 
+import should occur 
+before import of `./C
+ourseInformation`  
+import/order
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: `@/redux/
+features/courses/cour
+seApi` import should 
+occur before import 
+of `./CourseInformati
+on`  import/order
+9:3  Error: 'useCreat
+eCourseMutation' is 
+defined but never 
+used.  no-unused-vars
+12:8  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditCourse.tsx` to 
+same directory as `@/
+redux/features/course
+s/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+13:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react`  import/order
+14:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+14:1  Error: 
+`react-hot-toast` 
+import should occur 
+before import of `./C
+ourseInformation`  
+import/order
+15:1  Error: 
+`../../Loader` 
+import should occur 
+before import of `./C
+ourseInformation`  
+import/order
+15:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditCourse.tsx` to 
+same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+23:28  Error: 
+'refetch' is 
+assigned a value but 
+never used.  
+no-unused-vars
+143:37  Error: 'e' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Admi
+n/Customization/EditC
+ategories.tsx
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: `@/redux/
+features/layout/layou
+tApi` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+6:8  Error: Relative 
+imports from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditCategories.tsx` 
+to same directory as 
+`@/redux/features/lay
+out/layoutApi` or 
+consider making `@/re
+dux/features/layout/l
+ayoutApi` a package. 
+ import/no-relative-p
+arent-imports
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:38  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: 
+`../../Loader` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+8:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditCategories.tsx` 
+to same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+9:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+9:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+9:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditCategories.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+10:1  Error: 
+`react-icons/ai` 
+import should occur 
+after import of 
+`react-hot-toast`  
+import/order
+12:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditCategories.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+17:25  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+44:6  Warning: React 
+Hook useEffect has a 
+missing dependency: 
+'refetch'. Either 
+include it or remove 
+the dependency 
+array.  react-hooks/e
+xhaustive-deps
+142:27  Error: 'id' 
+is defined but never 
+used.  no-unused-vars
+142:36  Error: 
+'value' is defined 
+but never used.  
+no-unused-vars
+146:21  Error: 'FC' 
+is not defined.  
+no-undef
+
+./app/components/Admi
+n/Customization/EditF
+aq.tsx
+2:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+2:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditFaq.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:1  Error: `@/redux/
+features/courses/cour
+seApi` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+3:10  Error: 'useEdit
+CourseMutation' is 
+defined but never 
+used.  no-unused-vars
+3:39  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditFaq.tsx` to 
+same directory as `@/
+redux/features/course
+s/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: `@/redux/
+features/layout/layou
+tApi` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+7:8  Error: Relative 
+imports from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditFaq.tsx` to 
+same directory as `@/
+redux/features/layout
+/layoutApi` or 
+consider making `@/re
+dux/features/layout/l
+ayoutApi` a package. 
+ import/no-relative-p
+arent-imports
+12:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: 
+`../../Loader` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+13:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditFaq.tsx` to 
+same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+14:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditFaq.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+18:18  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+45:6  Warning: React 
+Hook useEffect has a 
+missing dependency: 
+'refetch'. Either 
+include it or remove 
+the dependency 
+array.  react-hooks/e
+xhaustive-deps
+
+./app/components/Admi
+n/Customization/EditH
+ero.tsx
+2:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+2:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditHero.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: `@/redux/
+features/layout/layou
+tApi` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+6:8  Error: Relative 
+imports from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditHero.tsx` to 
+same directory as `@/
+redux/features/layout
+/layoutApi` or 
+consider making `@/re
+dux/features/layout/l
+ayoutApi` a package. 
+ import/no-relative-p
+arent-imports
+9:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`EditHero.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+14:30  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+22:24  Error: 
+'isLoading' is 
+assigned a value but 
+never used.  
+no-unused-vars
+46:6  Warning: React 
+Hook useEffect has a 
+missing dependency: 
+'refetch'. Either 
+include it or remove 
+the dependency 
+array.  react-hooks/e
+xhaustive-deps
+75:11  Warning: 
+Using `<img>` could 
+result in slower LCP 
+and higher 
+bandwidth. Consider 
+using `<Image />` 
+from `next/image` to 
+automatically 
+optimize images. 
+This may incur 
+additional usage or 
+cost from your 
+provider. See: https:
+//nextjs.org/docs/mes
+sages/no-img-element 
+ @next/next/no-img-el
+ement
+
+./app/components/Admi
+n/DashboardHero.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:10  Error: 
+'ThemeSwitcher' is 
+defined but never 
+used.  no-unused-vars
+2:31  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`DashboardHero.tsx` 
+to same directory as 
+`@/app/utils/ThemeSwi
+tcher` or consider 
+making `@/app/utils/T
+hemeSwitcher` a 
+package.  import/no-r
+elative-parent-import
+s
+3:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/utils/ThemeSwitche
+r`  import/order
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`react-icons/io` 
+import should occur 
+before import of `@/a
+pp/utils/ThemeSwitche
+r`  import/order
+4:10  Error: 'IoMdNot
+ificationsOutline' 
+is defined but never 
+used.  no-unused-vars
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: 
+`next/dynamic` 
+import should occur 
+before import of `@/a
+pp/utils/ThemeSwitche
+r`  import/order
+7:1  Error: 
+`../Loader` import 
+should occur before 
+import of `./sidebar/
+DashboardHeader`  
+import/order
+7:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`DashboardHero.tsx` 
+to same directory as 
+`../Loader` or 
+consider making 
+`../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Admi
+n/Order/AllInvoices.t
+sx
+2:1  Error: `react` 
+import should occur 
+after import of 
+`next-themes`  
+import/order
+3:1  Error: 
+`@mui/x-data-grid` 
+import should occur 
+after import of 
+`@mui/material`  
+import/order
+3:20  Error: 
+'GridToolbar' is 
+defined but never 
+used.  no-unused-vars
+4:21  Error: Unable 
+to resolve path to 
+module 
+'@mui/material'.  
+import/no-unresolved
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: `@/redux/
+features/courses/cour
+seApi` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+6:39  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllInvoices.tsx` to 
+same directory as `@/
+redux/features/course
+s/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: 
+`../../Loader` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+7:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllInvoices.tsx` to 
+same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: 
+`timeago.js` import 
+should occur after 
+import of 
+`react-icons/ai`  
+import/order
+9:1  Error: `@/redux/
+features/orders/order
+sApi` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+9:38  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllInvoices.tsx` to 
+same directory as `@/
+redux/features/orders
+/ordersApi` or 
+consider making `@/re
+dux/features/orders/o
+rdersApi` a package. 
+ import/no-relative-p
+arent-imports
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:1  Error: `@/redux
+/features/user/userAp
+i` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+10:37  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllInvoices.tsx` to 
+same directory as `@/
+redux/features/user/u
+serApi` or consider 
+making `@/redux/featu
+res/user/userApi` a 
+package.  import/no-r
+elative-parent-import
+s
+11:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+12:1  Error: `@/redux
+/features/analytics/a
+nalyticsApi` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+13:3  Error: 'useGetC
+oursesAnalyticsQuery'
+ is defined but 
+never used.  
+no-unused-vars
+14:3  Error: 'useGetU
+serAnalyticsQuery' 
+is defined but never 
+used.  no-unused-vars
+15:8  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllInvoices.tsx` to 
+same directory as `@/
+redux/features/analyt
+ics/analyticsApi` or 
+consider making `@/re
+dux/features/analytic
+s/analyticsApi` a 
+package.  import/no-r
+elative-parent-import
+s
+16:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllInvoices.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+36:18  Error: 
+'setTheme' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/components/Admi
+n/sidebar/AdminSideba
+r.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `@/redux/
+features/auth/authApi
+` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+2:32  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AdminSidebar.tsx` 
+to same directory as 
+`@/redux/features/aut
+h/authApi` or 
+consider making `@/re
+dux/features/auth/aut
+hApi` a package.  imp
+ort/no-relative-paren
+t-imports
+3:1  Error: `react` 
+import should occur 
+after import of 
+`next-themes`  
+import/order
+3:35  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+4:1  Error: 
+`react-hot-toast` 
+import should occur 
+after import of 
+`next-themes`  
+import/order
+5:1  Error: 
+`react-pro-sidebar` 
+import should occur 
+after import of 
+`next-themes`  
+import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:45  Error: Unable 
+to resolve path to 
+module 
+'@mui/material'.  
+import/no-unresolved
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: `./Icon` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+26:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+26:1  Error: `../../.
+./../public/assets/av
+atar.jpg` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+26:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AdminSidebar.tsx` 
+to same directory as 
+`../../../../public/a
+ssets/avatar.jpg` or 
+consider making `../.
+./../../public/assets
+/avatar.jpg` a 
+package.  import/no-r
+elative-parent-import
+s
+27:1  Error: 
+`react-redux` import 
+should occur after 
+import of 
+`next-themes`  
+import/order
+28:1  Error: 
+`next/link` import 
+should occur after 
+import of 
+`next/image`  
+import/order
+30:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+31:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AdminSidebar.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+36:9  Error: 'JSX' 
+is not defined.  
+no-undef
+63:18  Error: 
+'setTheme' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/components/Admi
+n/sidebar/DashboardHe
+ader.tsx
+2:1  Error: `@/app/ut
+ils/ThemeSwitcher` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+2:31  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardHeader.tsx` to 
+same directory as `@/
+app/utils/ThemeSwitch
+er` or consider 
+making `@/app/utils/T
+hemeSwitcher` a 
+package.  import/no-r
+elative-parent-import
+s
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: `@/redux/
+features/notification
+s/notifiationsApi` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+6:8  Error: Relative 
+imports from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardHeader.tsx` to 
+same directory as `@/
+redux/features/notifi
+cations/notifiationsA
+pi` or consider 
+making `@/redux/featu
+res/notifications/not
+ifiationsApi` a 
+package.  import/no-r
+elative-parent-import
+s
+7:42  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardHeader.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+51:6  Warning: React 
+Hook useEffect has 
+missing 
+dependencies: 
+'audio' and 
+'refetch'. Either 
+include them or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+54:37  Error: 'data' 
+is defined but never 
+used.  no-unused-vars
+58:6  Warning: React 
+Hook useEffect has 
+missing 
+dependencies: 'player
+NotificationSound' 
+and 'refetch'. 
+Either include them 
+or remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+98:36  Error: 'id' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Admi
+n/sidebar/DashboardHe
+ro.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `@/app/ut
+ils/ThemeSwitcher` 
+import should occur 
+after import of 
+`react-icons/io`  
+import/order
+2:10  Error: 
+'ThemeSwitcher' is 
+defined but never 
+used.  no-unused-vars
+2:31  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`DashboardHero.tsx` 
+to same directory as 
+`@/app/utils/ThemeSwi
+tcher` or consider 
+making `@/app/utils/T
+hemeSwitcher` a 
+package.  import/no-r
+elative-parent-import
+s
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:10  Error: 'IoMdNot
+ificationsOutline' 
+is defined but never 
+used.  no-unused-vars
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: 
+`./DashboardHeader` 
+import should occur 
+after import of `../W
+idgets/DashboardWidge
+ts`  import/order
+6:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`DashboardHero.tsx` 
+to same directory as 
+`../Widgets/Dashboard
+Widgets` or consider 
+making `../Widgets/Da
+shboardWidgets` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Admi
+n/sidebar/Icon.tsx
+2:1  Error: `@mui/ico
+ns-material/ArrowForw
+ardIos` import 
+should occur before 
+import of `@mui/icons
+-material/HomeOutline
+d`  import/order
+3:1  Error: `@mui/ico
+ns-material/ArrowBack
+Ios` import should 
+occur before import 
+of `@mui/icons-materi
+al/HomeOutlined`  
+import/order
+6:1  Error: `@mui/ico
+ns-material/BarChartO
+utlined` import 
+should occur before 
+import of `@mui/icons
+-material/HomeOutline
+d`  import/order
+7:1  Error: `@mui/ico
+ns-material/MapOutlin
+ed` import should 
+occur before import 
+of `@mui/icons-materi
+al/PeopleOutlined`  
+import/order
+8:1  Error: `@mui/ico
+ns-material/Group` 
+import should occur 
+before import of `@mu
+i/icons-material/Home
+Outlined`  
+import/order
+9:1  Error: `@mui/ico
+ns-material/OndemandV
+ideo` import should 
+occur before import 
+of `@mui/icons-materi
+al/PeopleOutlined`  
+import/order
+12:1  Error: `@mui/ic
+ons-material/Quiz` 
+import should occur 
+before import of `@mu
+i/icons-material/Rece
+iptOutlined`  
+import/order
+14:1  Error: `@mui/ic
+ons-material/ManageHi
+story` import should 
+occur before import 
+of `@mui/icons-materi
+al/PeopleOutlined`  
+import/order
+15:1  Error: `@mui/ic
+ons-material/Settings
+` import should 
+occur before import 
+of `@mui/icons-materi
+al/VideoCall`  
+import/order
+16:1  Error: `@mui/ic
+ons-material/ExitToAp
+p` import should 
+occur before import 
+of `@mui/icons-materi
+al/HomeOutlined`  
+import/order
+
+./app/components/Admi
+n/TableSkeleton.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`TableSkeleton.tsx` 
+to same directory as 
+`@/app/components/Ske
+leton` or consider 
+making `@/app/compone
+nts/Skeleton` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Admi
+n/Users/AllUsers.tsx
+2:1  Error: `react` 
+import should occur 
+after import of 
+`next-themes`  
+import/order
+3:1  Error: 
+`react-icons/ai` 
+import should occur 
+after import of 
+`react-hot-toast`  
+import/order
+4:36  Error: Unable 
+to resolve path to 
+module 
+'@mui/material'.  
+import/no-unresolved
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: 
+`react-icons/fi` 
+import should occur 
+after import of 
+`react-hot-toast`  
+import/order
+7:10  Error: 
+'FiEdit2' is defined 
+but never used.  
+no-unused-vars
+8:1  Error: 
+`../../Loader` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+8:8  Error: 'Loader' 
+is defined but never 
+used.  no-unused-vars
+8:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllUsers.tsx` to 
+same directory as 
+`../../Loader` or 
+consider making 
+`../../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+9:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+9:1  Error: `../../Ad
+min/TableSkeleton` 
+import should occur 
+after import of `@/ap
+p/hooks/useSpeechOnHo
+ver`  import/order
+9:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllUsers.tsx` to 
+same directory as `..
+/../Admin/TableSkelet
+on` or consider 
+making `../../Admin/T
+ableSkeleton` a 
+package.  import/no-r
+elative-parent-import
+s
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:1  Error: 
+`timeago.js` import 
+should occur after 
+import of 
+`react-hot-toast`  
+import/order
+11:1  Error: `@/redux
+/features/user/userAp
+i` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+15:8  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllUsers.tsx` to 
+same directory as `@/
+redux/features/user/u
+serApi` or consider 
+making `@/redux/featu
+res/user/userApi` a 
+package.  import/no-r
+elative-parent-import
+s
+16:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+16:1  Error: `@/app/s
+tyles/styles` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+16:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllUsers.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+17:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+18:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`AllUsers.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+25:103  Error: 
+'userId' is defined 
+but never used.  
+no-unused-vars
+57:18  Error: 
+'setTheme' is 
+assigned a value but 
+never used.  
+no-unused-vars
+69:28  Error: 
+'error' is assigned 
+a value but never 
+used.  no-unused-vars
+106:6  Warning: 
+React Hook useEffect 
+has missing 
+dependencies: 
+'errorDelete' and 
+'refetch'. Either 
+include them or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+260:15  Warning: 
+aria-labeleby: This 
+attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-labelledby?  
+jsx-a11y/aria-props
+261:15  Warning: 
+aria-describedy: 
+This attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-describedby?  
+jsx-a11y/aria-props
+303:15  Warning: 
+aria-labeleby: This 
+attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-labelledby?  
+jsx-a11y/aria-props
+304:15  Warning: 
+aria-describedy: 
+This attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-describedby?  
+jsx-a11y/aria-props
+
+./app/components/Admi
+n/Widgets/DashboardWi
+dgets.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardWidgets.tsx` 
+to same directory as 
+`../Analytics/UsersAn
+alytics` or consider 
+making `../Analytics/
+UsersAnalytics` a 
+package.  import/no-r
+elative-parent-import
+s
+3:1  Error: 
+`react-icons/bi` 
+import should occur 
+before import of `../
+Analytics/UsersAnalyt
+ics`  import/order
+4:1  Error: 
+`react-icons/pi` 
+import should occur 
+before import of `../
+Analytics/UsersAnalyt
+ics`  import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: 
+`@mui/material` 
+import should occur 
+before import of 
+`react`  import/order
+5:39  Error: Unable 
+to resolve path to 
+module 
+'@mui/material'.  
+import/no-unresolved
+6:1  Error: `../Analy
+tics/OrdersAnalytics`
+ import should occur 
+before import of `../
+Analytics/UsersAnalyt
+ics`  import/order
+6:29  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardWidgets.tsx` 
+to same directory as 
+`../Analytics/OrdersA
+nalytics` or 
+consider making `../A
+nalytics/OrdersAnalyt
+ics` a package.  impo
+rt/no-relative-parent
+-imports
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:25  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardWidgets.tsx` 
+to same directory as 
+`../Order/AllInvoices
+` or consider making 
+`../Order/AllInvoices
+` a package.  import/
+no-relative-parent-im
+ports
+8:1  Error: `@/redux/
+features/analytics/an
+alyticsApi` import 
+should occur before 
+import of `../Analyti
+cs/UsersAnalytics`  
+import/order
+11:8  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardWidgets.tsx` 
+to same directory as 
+`@/redux/features/ana
+lytics/analyticsApi` 
+or consider making `@
+/redux/features/analy
+tics/analyticsApi` a 
+package.  import/no-r
+elative-parent-import
+s
+12:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+12:1  Error: `@/app/h
+ooks/useSpeechOnHover
+` import should 
+occur before import 
+of `../Analytics/User
+sAnalytics`  
+import/order
+12:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardWidgets.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+
+./app/components/Admi
+n/Widgets/DashboardWi
+dgetsSkeleton.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardWidgetsSkeleton
+.tsx` to same 
+directory as `@/app/c
+omponents/Skeleton` 
+or consider making `@
+/app/components/Skele
+ton` a package.  impo
+rt/no-relative-parent
+-imports
+9:48  Error: 'open' 
+is defined but never 
+used.  no-unused-vars
+9:54  Error: 'value' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Auth
+/Login.tsx
+2:1  Error: `formik` 
+import should occur 
+before import of 
+`react`  import/order
+4:1  Error: 
+`react-icons/ai` 
+import should occur 
+before import of 
+`yup`  import/order
+9:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+9:1  Error: 
+`react-icons/fc` 
+import should occur 
+before import of 
+`yup`  import/order
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Login.tsx` to same 
+directory as `../../.
+./app/styles/styles` 
+or consider making `.
+./../../app/styles/st
+yles` a package.  imp
+ort/no-relative-paren
+t-imports
+11:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:1  Error: `@/redux
+/features/auth/authAp
+i` import should 
+occur before import 
+of `../../../app/styl
+es/styles`  
+import/order
+11:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Login.tsx` to same 
+directory as `@/redux
+/features/auth/authAp
+i` or consider 
+making `@/redux/featu
+res/auth/authApi` a 
+package.  import/no-r
+elative-parent-import
+s
+12:1  Error: 
+`react-hot-toast` 
+import should occur 
+before import of 
+`yup`  import/order
+13:1  Error: 
+`next-auth/react` 
+import should occur 
+before import of 
+`react`  import/order
+14:1  Error: 
+`react-redux` import 
+should occur before 
+import of `yup`  
+import/order
+15:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+15:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react`  import/order
+16:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+16:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Login.tsx` to same 
+directory as `../../h
+ooks/useSpeechOnHover
+` or consider making 
+`../../hooks/useSpeec
+hOnHover` a package. 
+ import/no-relative-p
+arent-imports
+17:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+18:1  Error: `../../S
+peechProvider` 
+import should occur 
+before import of `./V
+oiceAuthIndicator`  
+import/order
+18:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Login.tsx` to same 
+directory as `../../S
+peechProvider` or 
+consider making `../.
+./SpeechProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+21:14  Error: 
+'route' is defined 
+but never used.  
+no-unused-vars
+22:13  Error: 'open' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Auth
+/Verification.tsx
+1:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of 
+`react-redux`  
+import/order
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Verification.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `@/redux/
+features/auth/authApi
+` import should 
+occur after import 
+of `react-redux`  
+import/order
+2:39  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Verification.tsx` 
+to same directory as 
+`@/redux/features/aut
+h/authApi` or 
+consider making `@/re
+dux/features/auth/aut
+hApi` a package.  imp
+ort/no-relative-paren
+t-imports
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Verification.tsx` 
+to same directory as 
+`../../hooks/useSpeec
+hOnHover` or 
+consider making `../.
+./hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+10:14  Error: 
+'route' is defined 
+but never used.  
+no-unused-vars
+35:6  Error: 
+Unnecessary 
+semicolon.  
+no-extra-semi
+45:6  Warning: React 
+Hook useEffect has a 
+missing dependency: 
+'setRoute'. Either 
+include it or remove 
+the dependency 
+array. If 'setRoute' 
+changes too often, 
+find the parent 
+component that 
+defines it and wrap 
+that definition in 
+useCallback.  react-h
+ooks/exhaustive-deps
+
+./app/components/Auth
+/VoiceAuthIndicator.t
+sx
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Voi
+ceAuthIndicator.tsx` 
+to same directory as 
+`../../hooks/useVoice
+Auth` or consider 
+making `../../hooks/u
+seVoiceAuth` a 
+package.  import/no-r
+elative-parent-import
+s
+7:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Voi
+ceAuthIndicator.tsx` 
+to same directory as 
+`../../SpeechProvider
+` or consider making 
+`../../SpeechProvider
+` a package.  import/
+no-relative-parent-im
+ports
+49:10  Error: 't' is 
+defined but never 
+used.  no-unused-vars
+55:21  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+55:27  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+55:32  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+55:40  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+60:25  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+60:31  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+60:36  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+60:44  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+61:25  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+61:49  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+62:25  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+62:55  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+63:25  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+63:32  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+63:37  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+63:42  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+102:10  Error: 't' 
+is defined but never 
+used.  no-unused-vars
+111:42  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+111:47  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+111:58  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+111:65  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+
+./app/components/Auth
+/┘ìSignUp.tsx
+2:1  Error: `formik` 
+import should occur 
+before import of 
+`react`  import/order
+4:1  Error: 
+`react-icons/ai` 
+import should occur 
+before import of 
+`yup`  import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: 
+`react-icons/fc` 
+import should occur 
+before import of 
+`yup`  import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`┘ìSignUp.tsx` to 
+same directory as `..
+/../../app/styles/sty
+les` or consider 
+making `../../../app/
+styles/styles` a 
+package.  import/no-r
+elative-parent-import
+s
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: `@/redux/
+features/auth/authApi
+` import should 
+occur before import 
+of `../../../app/styl
+es/styles`  
+import/order
+7:78  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`┘ìSignUp.tsx` to 
+same directory as `@/
+redux/features/auth/a
+uthApi` or consider 
+making `@/redux/featu
+res/auth/authApi` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react`  import/order
+9:1  Error: 
+`react-hot-toast` 
+import should occur 
+before import of 
+`yup`  import/order
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:1  Error: 
+`next-auth/react` 
+import should occur 
+before import of 
+`react`  import/order
+11:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`┘ìSignUp.tsx` to 
+same directory as `..
+/../hooks/useSpeechOn
+Hover` or consider 
+making `../../hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+14:16  Error: 
+'route' is defined 
+but never used.  
+no-unused-vars
+30:35  Error: 
+'useSpeech' is not 
+defined.  no-undef
+94:36  Error: 
+'VoiceAuthIndicator' 
+is not defined.  
+react/jsx-no-undef
+94:36  Error: 
+'VoiceAuthIndicator' 
+is not defined.  
+no-undef
+
+./app/components/Cate
+goryButton.tsx
+6:17  Error: 
+'category' is 
+defined but never 
+used.  no-unused-vars
+
+./app/components/Clie
+ntTTSDemo.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:36  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ClientTTSDemo.tsx` 
+to same directory as 
+`../../lib/clientTTS`
+ or consider making `
+../../lib/clientTTS` 
+a package.  import/no
+-relative-parent-impo
+rts
+6:27  Error: Unable 
+to resolve path to 
+module '../../SpeechP
+rovider'.  
+import/no-unresolved
+
+./app/components/Cour
+se/ContentCourseList.
+tsx
+1:27  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Con
+tentCourseList.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+47:44  Error: 
+'sectionIndex' is 
+defined but never 
+used.  no-unused-vars
+67:35  Error: React 
+Hook 
+"useSpeechOnHover" 
+cannot be called 
+inside a callback. 
+React Hooks must be 
+called in a React 
+function component 
+or a custom React 
+Hook function.  react
+-hooks/rules-of-hooks
+68:33  Error: React 
+Hook 
+"useSpeechOnHover" 
+cannot be called 
+inside a callback. 
+React Hooks must be 
+called in a React 
+function component 
+or a custom React 
+Hook function.  react
+-hooks/rules-of-hooks
+69:35  Error: React 
+Hook 
+"useSpeechOnHover" 
+cannot be called 
+inside a callback. 
+React Hooks must be 
+called in a React 
+function component 
+or a custom React 
+Hook function.  react
+-hooks/rules-of-hooks
+113:41  Error: React 
+Hook 
+"useSpeechOnHover" 
+cannot be called 
+inside a callback. 
+React Hooks must be 
+called in a React 
+function component 
+or a custom React 
+Hook function.  react
+-hooks/rules-of-hooks
+114:42  Error: React 
+Hook 
+"useSpeechOnHover" 
+cannot be called 
+inside a callback. 
+React Hooks must be 
+called in a React 
+function component 
+or a custom React 
+Hook function.  react
+-hooks/rules-of-hooks
+
+./app/components/Cour
+se/CourseCard.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:1  Error: `@/app/ut
+ils/Ratings` import 
+should occur after 
+import of 
+`react-icons/ai`  
+import/order
+1:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseCard.tsx` to 
+same directory as `@/
+app/utils/Ratings` 
+or consider making `@
+/app/utils/Ratings` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:21  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseCard.tsx` to 
+same directory as `..
+/../hooks/useSpeechOn
+Hover` or consider 
+making `../../hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Cour
+se/CourseCardSkeleton
+.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseCardSkeleton.tsx` 
+to same directory as 
+`../Skeleton` or 
+consider making 
+`../Skeleton` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Cour
+se/CourseContent.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:42  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseContent.tsx` 
+to same directory as 
+`@/redux/features/cou
+rses/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `react` 
+import should occur 
+before import of `@/r
+edux/features/courses
+/courseApi`  
+import/order
+2:27  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseContent.tsx` 
+to same directory as 
+`../Loader` or 
+consider making 
+`../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: `@/app/ut
+ils/Heading` import 
+should occur before 
+import of `@/redux/fe
+atures/courses/course
+Api`  import/order
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseContent.tsx` 
+to same directory as 
+`@/app/utils/Heading`
+ or consider making `
+@/app/utils/Heading` 
+a package.  import/no
+-relative-parent-impo
+rts
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: 
+`../Header` import 
+should occur before 
+import of 
+`../Loader`  
+import/order
+6:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseContent.tsx` 
+to same directory as 
+`../Header` or 
+consider making 
+`../Header` a 
+package.  import/no-r
+elative-parent-import
+s
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: `./Conten
+tCourseList` import 
+should occur before 
+import of `./CourseCo
+ntentMedia`  
+import/order
+8:1  Error: `@/app/ho
+oks/useSpeechOnHover`
+ import should occur 
+before import of `@/r
+edux/features/courses
+/courseApi`  
+import/order
+8:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseContent.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+
+./app/components/Cour
+se/CourseContentMedia
+.tsx
+1:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of 
+`socket.io-client`  
+import/order
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseContentMedia.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:1  Error: `@/app/ut
+ils/CoursePlayer` 
+import should occur 
+after import of 
+`socket.io-client`  
+import/order
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseContentMedia.tsx` 
+to same directory as 
+`@/app/utils/CoursePl
+ayer` or consider 
+making `@/app/utils/C
+oursePlayer` a 
+package.  import/no-r
+elative-parent-import
+s
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: `@/redux/
+features/courses/cour
+seApi` import should 
+occur after import 
+of 
+`socket.io-client`  
+import/order
+9:8  Error: Relative 
+imports from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseContentMedia.tsx` 
+to same directory as 
+`@/redux/features/cou
+rses/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+11:38  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+20:1  Error: 
+`timeago.js` import 
+should occur after 
+import of 
+`socket.io-client`  
+import/order
+22:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+22:1  Error: `../../.
+./public/assets/avata
+r.jpg` import should 
+occur after import 
+of 
+`socket.io-client`  
+import/order
+22:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseContentMedia.tsx` 
+to same directory as 
+`../../../public/asse
+ts/avatar.jpg` or 
+consider making `../.
+./../public/assets/av
+atar.jpg` a package. 
+ import/no-relative-p
+arent-imports
+23:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+24:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+24:1  Error: `@/app/u
+tils/Ratings` import 
+should occur after 
+import of 
+`socket.io-client`  
+import/order
+24:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseContentMedia.tsx` 
+to same directory as 
+`@/app/utils/Ratings`
+ or consider making `
+@/app/utils/Ratings` 
+a package.  import/no
+-relative-parent-impo
+rts
+25:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+26:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseContentMedia.tsx` 
+to same directory as 
+`../../hooks/useSpeec
+hOnHover` or 
+consider making `../.
+./hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+35:20  Error: 
+'activeVideo' is 
+defined but never 
+used.  no-unused-vars
+53:10  Error: 
+'answerId' is 
+assigned a value but 
+never used.  
+no-unused-vars
+111:9  Error: 'addRep
+lyReviewButtonRef' 
+is assigned a value 
+but never used.  
+no-unused-vars
+112:9  Error: 'review
+ReplyInputRef' is 
+assigned a value but 
+never used.  
+no-unused-vars
+113:9  Error: 'submit
+ReviewReplyButtonRef'
+ is assigned a value 
+but never used.  
+no-unused-vars
+191:6  Warning: 
+React Hook useEffect 
+has missing 
+dependencies: 
+'activeVideo', 
+'courseRefetch', 
+'data', 'refetch', 
+'user._id', and 
+'user.role'. Either 
+include them or 
+remove the 
+dependency array. If 
+'refetch' changes 
+too often, find the 
+parent component 
+that defines it and 
+wrap that definition 
+in useCallback.  reac
+t-hooks/exhaustive-de
+ps
+481:22  Error: 'val' 
+is defined but never 
+used.  no-unused-vars
+482:17  Error: 'id' 
+is defined but never 
+used.  no-unused-vars
+486:14  Error: 'val' 
+is defined but never 
+used.  no-unused-vars
+491:19  Error: 'FC' 
+is not defined.  
+no-undef
+491:154  Error: 'repl
+yCreationLoading' is 
+defined but never 
+used.  no-unused-vars
+598:3  Error: 'user' 
+is defined but never 
+used.  no-unused-vars
+599:3  Error: 
+'setAnswerId' is 
+defined but never 
+used.  no-unused-vars
+629:20  Error: 'FC' 
+is not defined.  
+no-undef
+629:23  Error: 
+'CommentItemProps' 
+is not defined.  
+no-undef
+630:3  Error: 'data' 
+is defined but never 
+used.  no-unused-vars
+631:3  Error: 
+'activeVide' is 
+defined but never 
+used.  no-unused-vars
+
+./app/components/Cour
+se/CourseDetails.tsx
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`@/app/utils/CoursePl
+ayer` or consider 
+making `@/app/utils/C
+oursePlayer` a 
+package.  import/no-r
+elative-parent-import
+s
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`@/app/utils/Ratings`
+ or consider making `
+@/app/utils/Ratings` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:1  Error: 
+`next/link` import 
+should occur before 
+import of `@/app/styl
+es/styles`  
+import/order
+5:1  Error: 
+`timeago.js` import 
+should occur before 
+import of `@/app/styl
+es/styles`  
+import/order
+6:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+7:1  Error: 
+`react-icons/io` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+9:3  Error: 'IoMdClos
+eCircleOutline' is 
+defined but never 
+used.  no-unused-vars
+11:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:1  Error: 
+`react-redux` import 
+should occur before 
+import of `@/app/styl
+es/styles`  
+import/order
+11:10  Error: 
+'useSelector' is 
+defined but never 
+used.  no-unused-vars
+12:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: `@/redux
+/features/api/apiSlic
+e` import should 
+occur before import 
+of `./ContentCourseLi
+st`  import/order
+13:10  Error: 
+'useLoadUserQuery' 
+is defined but never 
+used.  no-unused-vars
+13:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`@/redux/features/api
+/apiSlice` or 
+consider making `@/re
+dux/features/api/apiS
+lice` a package.  imp
+ort/no-relative-paren
+t-imports
+14:1  Error: 
+`next/navigation` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+15:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+15:1  Error: 
+`react-hot-toast` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+16:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+16:1  Error: `@/redux
+/features/courses/cou
+rsesApi` import 
+should occur before 
+import of `./ContentC
+ourseList`  
+import/order
+16:43  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`@/redux/features/cou
+rses/coursesApi` or 
+consider making `@/re
+dux/features/courses/
+coursesApi` a 
+package.  import/no-r
+elative-parent-import
+s
+17:1  Error: 
+`next/image` import 
+should occur before 
+import of `@/app/styl
+es/styles`  
+import/order
+18:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+18:1  Error: 
+`react-icons/vsc` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+19:1  Error: `@/publi
+c/assets/avatar.jpg` 
+import should occur 
+before import of `./C
+ontentCourseList`  
+import/order
+19:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`@/public/assets/avat
+ar.jpg` or consider 
+making `@/public/asse
+ts/avatar.jpg` a 
+package.  import/no-r
+elative-parent-import
+s
+20:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+20:1  Error: `@/app/h
+ooks/useAuth` import 
+should occur before 
+import of `@/app/styl
+es/styles`  
+import/order
+20:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`@/app/hooks/useAuth`
+ or consider making `
+@/app/hooks/useAuth` 
+a package.  import/no
+-relative-parent-impo
+rts
+21:1  Error: `../../h
+ooks/useSpeechOnHover
+` import should 
+occur before import 
+of `./ContentCourseLi
+st`  import/order
+21:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CourseDetails.tsx` 
+to same directory as 
+`../../hooks/useSpeec
+hOnHover` or 
+consider making `../.
+./hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+34:10  Error: 'open' 
+is assigned a value 
+but never used.  
+no-unused-vars
+34:16  Error: 
+'setOpen' is 
+assigned a value but 
+never used.  
+no-unused-vars
+72:25  Error: 'e' is 
+defined but never 
+used.  no-unused-vars
+93:6  Warning: React 
+Hook useEffect has 
+missing 
+dependencies: 
+'data._id', 
+'refetch', and 
+'router'. Either 
+include them or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+194:19  Error: 
+Unsafe usage of 
+optional chaining. 
+If it short-circuits 
+with 'undefined' the 
+evaluation will 
+throw TypeError.  no-
+unsafe-optional-chain
+ing
+
+./app/components/Cour
+se/CourseDetailSkelet
+on.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:26  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseDetailSkeleton.tsx
+` to same directory 
+as `../Skeleton` or 
+consider making 
+`../Skeleton` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/components/Cour
+se/CourseDetailsPage.
+tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:42  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseDetailsPage.tsx` 
+to same directory as 
+`@/redux/features/cou
+rses/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: `react` 
+import should occur 
+before import of `@/r
+edux/features/courses
+/courseApi`  
+import/order
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:8  Error: 'Loader' 
+is defined but never 
+used.  no-unused-vars
+4:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseDetailsPage.tsx` 
+to same directory as 
+`../Loader` or 
+consider making 
+`../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: `@/app/ut
+ils/Heading` import 
+should occur before 
+import of `@/redux/fe
+atures/courses/course
+Api`  import/order
+6:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseDetailsPage.tsx` 
+to same directory as 
+`@/app/utils/Heading`
+ or consider making `
+@/app/utils/Heading` 
+a package.  import/no
+-relative-parent-impo
+rts
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: 
+`../Header` import 
+should occur before 
+import of 
+`../Loader`  
+import/order
+7:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseDetailsPage.tsx` 
+to same directory as 
+`../Header` or 
+consider making 
+`../Header` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: 
+`./CourseDetails` 
+import should occur 
+before import of `./C
+ourseDetailSkeleton` 
+ import/order
+9:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+9:1  Error: 
+`../Footer` import 
+should occur before 
+import of 
+`../Loader`  
+import/order
+9:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseDetailsPage.tsx` 
+to same directory as 
+`../Footer` or 
+consider making 
+`../Footer` a 
+package.  import/no-r
+elative-parent-import
+s
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:1  Error: `@/redux
+/features/orders/orde
+rsApi` import should 
+occur before import 
+of `../Loader`  
+import/order
+13:8  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Cou
+rseDetailsPage.tsx` 
+to same directory as 
+`@/redux/features/ord
+ers/ordersApi` or 
+consider making `@/re
+dux/features/orders/o
+rdersApi` a package. 
+ import/no-relative-p
+arent-imports
+14:1  Error: 
+`@stripe/stripe-js` 
+import should occur 
+before import of `@/r
+edux/features/courses
+/courseApi`  
+import/order
+41:6  Warning: React 
+Hook useEffect has a 
+missing dependency: '
+createPaymentIntent'.
+ Either include it 
+or remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+
+./app/components/FAQ/
+FAQ.tsx
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`FAQ.tsx` to same 
+directory as `@/app/s
+tyles/styles` or 
+consider making `@/ap
+p/styles/styles` a 
+package.  import/no-r
+elative-parent-import
+s
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:37  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`FAQ.tsx` to same 
+directory as `@/redux
+/features/layout/layo
+utApi` or consider 
+making `@/redux/featu
+res/layout/layoutApi`
+ a package.  import/n
+o-relative-parent-imp
+orts
+3:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+3:17  Error: 
+'useEffect' is 
+defined but never 
+used.  no-unused-vars
+4:1  Error: 
+`react-icons/hi` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+8:14  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+9:11  Error: 'data' 
+is assigned a value 
+but never used.  
+no-unused-vars
+11:21  Error: 
+'setQuestions' is 
+assigned a value but 
+never used.  
+no-unused-vars
+54:41  Error: React 
+Hook "useRef" cannot 
+be called inside a 
+callback. React 
+Hooks must be called 
+in a React function 
+component or a 
+custom React Hook 
+function.  react-hook
+s/rules-of-hooks
+55:42  Error: React 
+Hook "useRef" cannot 
+be called inside a 
+callback. React 
+Hooks must be called 
+in a React function 
+component or a 
+custom React Hook 
+function.  react-hook
+s/rules-of-hooks
+
+./app/components/Foot
+er.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:36  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Footer.tsx` to same 
+directory as 
+`@/lib/clientTTS` or 
+consider making 
+`@/lib/clientTTS` a 
+package.  import/no-r
+elative-parent-import
+s
+4:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Footer.tsx` to same 
+directory as 
+`../SpeechProvider` 
+or consider making 
+`../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+8:17  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Head
+er.tsx
+2:1  Error: 
+`next/link` import 
+should occur after 
+import of 
+`next/image`  
+import/order
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: `react` 
+import should occur 
+after import of 
+`next-auth/react`  
+import/order
+4:1  Error: 
+`../utils/NavItems` 
+import should occur 
+after import of `../h
+ooks/useSpeechOnHover
+`  import/order
+4:22  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as 
+`../utils/NavItems` 
+or consider making 
+`../utils/NavItems` 
+a package.  import/no
+-relative-parent-impo
+rts
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: `../utils
+/ThemeSwitcher` 
+import should occur 
+after import of `../h
+ooks/useSpeechOnHover
+`  import/order
+5:31  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `../util
+s/ThemeSwitcher` or 
+consider making `../u
+tils/ThemeSwitcher` 
+a package.  import/no
+-relative-parent-impo
+rts
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: 
+`react-icons/hi` 
+import should occur 
+after import of 
+`react-hot-toast`  
+import/order
+7:1  Error: `../utils
+/CustomModal` import 
+should occur after 
+import of `../hooks/u
+seSpeechOnHover`  
+import/order
+7:25  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `../util
+s/CustomModal` or 
+consider making `../u
+tils/CustomModal` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: `../compo
+nents/Auth/Login` 
+import should occur 
+after import of `../.
+./lib/clientTTS`  
+import/order
+9:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+9:1  Error: `../compo
+nents/Auth/┘ìSignUp` 
+import should occur 
+after import of `../.
+./lib/clientTTS`  
+import/order
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+10:1  Error: `./Auth/
+Verification` import 
+should occur after 
+import of `../hooks/u
+seSpeechOnHover`  
+import/order
+11:1  Error: 
+`react-redux` import 
+should occur after 
+import of 
+`react-hot-toast`  
+import/order
+11:10  Error: 
+'useSelector' is 
+defined but never 
+used.  no-unused-vars
+12:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: `../../p
+ublic/assets/avatar.j
+pg` import should 
+occur after import 
+of `../../lib/clientT
+TS`  import/order
+13:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `../../p
+ublic/assets/avatar.j
+pg` or consider 
+making `../../public/
+assets/avatar.jpg` a 
+package.  import/no-r
+elative-parent-import
+s
+14:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+15:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+15:1  Error: `@/redux
+/features/auth/authAp
+i` import should 
+occur after import 
+of `@/redux/features/
+api/apiSlice`  
+import/order
+15:55  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `@/redux
+/features/auth/authAp
+i` or consider 
+making `@/redux/featu
+res/auth/authApi` a 
+package.  import/no-r
+elative-parent-import
+s
+16:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+17:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+17:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `@/app/h
+ooks/useAuth` or 
+consider making `@/ap
+p/hooks/useAuth` a 
+package.  import/no-r
+elative-parent-import
+s
+18:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+18:1  Error: 
+`../SpeechProvider` 
+import should occur 
+after import of `../h
+ooks/useSpeechOnHover
+`  import/order
+18:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as 
+`../SpeechProvider` 
+or consider making 
+`../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+19:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+19:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `@/redux
+/features/api/apiSlic
+e` or consider 
+making `@/redux/featu
+res/api/apiSlice` a 
+package.  import/no-r
+elative-parent-import
+s
+20:36  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `../../l
+ib/clientTTS` or 
+consider making `../.
+./lib/clientTTS` a 
+package.  import/no-r
+elative-parent-import
+s
+21:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Header.tsx` to same 
+directory as `../hook
+s/useSpeechOnHover` 
+or consider making `.
+./hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+25:13  Error: 'open' 
+is defined but never 
+used.  no-unused-vars
+28:14  Error: 
+'route' is defined 
+but never used.  
+no-unused-vars
+77:13  Error: 'open' 
+is defined but never 
+used.  no-unused-vars
+142:24  Error: 
+'toggleTTS' is 
+assigned a value but 
+never used.  
+no-unused-vars
+142:77  Error: 
+'isVoiceListening' 
+is assigned a value 
+but never used.  
+no-unused-vars
+154:17  Error: 
+'loadUserData' is 
+assigned a value but 
+never used.  
+no-unused-vars
+156:35  Error: 
+'error' is assigned 
+a value but never 
+used.  no-unused-vars
+158:9  Error: 
+Unexpected empty 
+object pattern.  
+no-empty-pattern
+230:6  Warning: 
+React Hook useEffect 
+has missing 
+dependencies: 
+'isSuccess' and 
+'socialAuth'. Either 
+include them or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+278:71  Error: 
+'EventListener' is 
+not defined.  
+no-undef
+280:76  Error: 
+'EventListener' is 
+not defined.  
+no-undef
+
+./app/components/Load
+er.tsx
+6:17  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Murf
+TTSDemo.tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:32  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`MurfTTSDemo.tsx` to 
+same directory as 
+`../../lib/murfApi` 
+or consider making 
+`../../lib/murfApi` 
+a package.  import/no
+-relative-parent-impo
+rts
+
+./app/components/Paym
+ent/CheckOutForm.tsx
+1:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of 
+`socket.io-client`  
+import/order
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CheckOutForm.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:1  Error: `@/redux/
+features/api/apiSlice
+` import should 
+occur after import 
+of 
+`socket.io-client`  
+import/order
+2:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CheckOutForm.tsx` 
+to same directory as 
+`@/redux/features/api
+/apiSlice` or 
+consider making `@/re
+dux/features/api/apiS
+lice` a package.  imp
+ort/no-relative-paren
+t-imports
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: `@/redux/
+features/orders/order
+sApi` import should 
+occur after import 
+of 
+`socket.io-client`  
+import/order
+3:40  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CheckOutForm.tsx` 
+to same directory as 
+`@/redux/features/ord
+ers/ordersApi` or 
+consider making `@/re
+dux/features/orders/o
+rdersApi` a package. 
+ import/no-relative-p
+arent-imports
+11:38  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+13:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+14:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CheckOutForm.tsx` 
+to same directory as 
+`../../hooks/useSpeec
+hOnHover` or 
+consider making `../.
+./hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+24:25  Error: 
+'setOpen' is defined 
+but never used.  
+no-unused-vars
+30:9  Error: 
+Unexpected empty 
+object pattern.  
+no-empty-pattern
+55:3  Warning: React 
+Hook useEffect 
+contains a call to 
+'setLoadUser'. 
+Without a list of 
+dependencies, this 
+can lead to an 
+infinite chain of 
+updates. To fix 
+this, pass 
+[orderData, error, 
+data.name, data._id, 
+user._id] as a 
+second argument to 
+the useEffect Hook.  
+react-hooks/exhaustiv
+e-deps
+
+./app/components/Prof
+ile/ChangePassword.ts
+x
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ChangePassword.tsx` 
+to same directory as 
+`@/app/styles/styles`
+ or consider making `
+@/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:43  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ChangePassword.tsx` 
+to same directory as 
+`@/redux/features/use
+r/userApi` or 
+consider making `@/re
+dux/features/user/use
+rApi` a package.  imp
+ort/no-relative-paren
+t-imports
+3:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+3:38  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`react-hot-toast` 
+import should occur 
+before import of `@/a
+pp/styles/styles`  
+import/order
+5:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ChangePassword.tsx` 
+to same directory as 
+`../../hooks/useSpeec
+hOnHover` or 
+consider making `../.
+./hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+9:25  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/components/Prof
+ile/Profile.tsx
+2:1  Error: `react` 
+import should occur 
+after import of 
+`next-auth/react`  
+import/order
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`./SideBarProfile` 
+import should occur 
+after import of `../.
+./SpeechProvider`  
+import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: `@/redux/
+features/auth/authApi
+` import should 
+occur after import 
+of `@/redux/features/
+api/apiSlice`  
+import/order
+5:32  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `@/
+redux/features/auth/a
+uthApi` or consider 
+making `@/redux/featu
+res/auth/authApi` a 
+package.  import/no-r
+elative-parent-import
+s
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: `@/redux/
+features/courses/cour
+seApi` import should 
+occur after import 
+of `@/redux/features/
+api/apiSlice`  
+import/order
+7:44  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `@/
+redux/features/course
+s/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `@/
+redux/features/api/ap
+iSlice` or consider 
+making `@/redux/featu
+res/api/apiSlice` a 
+package.  import/no-r
+elative-parent-import
+s
+9:1  Error: 
+`../Loader` import 
+should occur after 
+import of `../../Spee
+chProvider`  
+import/order
+9:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as 
+`../Loader` or 
+consider making 
+`../Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+10:1  Error: `../Cour
+se/CourseCardSkeleton
+` import should 
+occur after import 
+of `../../SpeechProvi
+der`  import/order
+10:32  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `..
+/Course/CourseCardSke
+leton` or consider 
+making `../Course/Cou
+rseCardSkeleton` a 
+package.  import/no-r
+elative-parent-import
+s
+11:1  Error: `../../h
+ooks/useSpeechOnHover
+` import should 
+occur after import 
+of `../../hooks/usePr
+ofileVoiceCommands`  
+import/order
+11:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `..
+/../hooks/useSpeechOn
+Hover` or consider 
+making `../../hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+12:41  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `..
+/../hooks/useProfileV
+oiceCommands` or 
+consider making `../.
+./hooks/useProfileVoi
+ceCommands` a 
+package.  import/no-r
+elative-parent-import
+s
+13:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `..
+/../SpeechProvider` 
+or consider making `.
+./../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+24:41  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Profile.tsx` to 
+same directory as `..
+/Course/CourseCard` 
+or consider making `.
+./Course/CourseCard` 
+a package.  import/no
+-relative-parent-impo
+rts
+
+./app/components/Prof
+ile/ProfileInfo.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of `@/app/hook
+s/useSpeechOnHover`  
+import/order
+2:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ProfileInfo.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:42  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`react-icons/ai` 
+import should occur 
+after import of 
+`react-hot-toast`  
+import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: `../../..
+/public/assets/avatar
+.jpg` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+5:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ProfileInfo.tsx` to 
+same directory as `..
+/../../public/assets/
+avatar.jpg` or 
+consider making `../.
+./../public/assets/av
+atar.jpg` a package. 
+ import/no-relative-p
+arent-imports
+6:1  Error: `@/redux/
+features/user/userApi
+` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+6:65  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ProfileInfo.tsx` to 
+same directory as `@/
+redux/features/user/u
+serApi` or consider 
+making `@/redux/featu
+res/user/userApi` a 
+package.  import/no-r
+elative-parent-import
+s
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: `@/redux/
+features/api/apiSlice
+` import should 
+occur after import 
+of `@/app/hooks/useSp
+eechOnHover`  
+import/order
+7:10  Error: 
+'useLoadUserQuery' 
+is defined but never 
+used.  no-unused-vars
+7:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ProfileInfo.tsx` to 
+same directory as `@/
+redux/features/api/ap
+iSlice` or consider 
+making `@/redux/featu
+res/api/apiSlice` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+9:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ProfileInfo.tsx` to 
+same directory as `@/
+app/hooks/useSpeechOn
+Hover` or consider 
+making `@/app/hooks/u
+seSpeechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+14:20  Error: 
+'avatar' is defined 
+but never used.  
+no-unused-vars
+15:18  Error: 'user' 
+is defined but never 
+used.  no-unused-vars
+19:63  Error: 
+'updateUser' is 
+defined but never 
+used.  no-unused-vars
+
+./app/components/Prof
+ile/SideBarProfile.ts
+x
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:21  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`SideBarProfile.tsx` 
+to same directory as 
+`../../../public/asse
+ts/avatar.jpg` or 
+consider making `../.
+./../public/assets/av
+atar.jpg` a package. 
+ import/no-relative-p
+arent-imports
+3:1  Error: 
+`next/image` import 
+should occur before 
+import of `react`  
+import/order
+4:1  Error: 
+`react-icons/ri` 
+import should occur 
+before import of `../
+../../public/assets/a
+vatar.jpg`  
+import/order
+5:1  Error: 
+`react-icons/si` 
+import should occur 
+before import of `../
+../../public/assets/a
+vatar.jpg`  
+import/order
+6:1  Error: 
+`react-icons/ai` 
+import should occur 
+before import of `../
+../../public/assets/a
+vatar.jpg`  
+import/order
+7:1  Error: 
+`react-icons/md` 
+import should occur 
+before import of `../
+../../public/assets/a
+vatar.jpg`  
+import/order
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: 
+`next/link` import 
+should occur before 
+import of `react`  
+import/order
+9:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`SideBarProfile.tsx` 
+to same directory as 
+`../../hooks/useSpeec
+hOnHover` or 
+consider making `../.
+./hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+16:17  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+
+./app/components/Revi
+ews/ReviewsCard.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `@/app/ut
+ils/Ratings` import 
+should occur after 
+import of `react`  
+import/order
+2:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`ReviewsCard.tsx` to 
+same directory as `@/
+app/utils/Ratings` 
+or consider making `@
+/app/utils/Ratings` 
+a package.  import/no
+-relative-parent-impo
+rts
+
+./app/components/Rout
+e/Courses.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:44  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Courses.tsx` to 
+same directory as `@/
+redux/features/course
+s/courseApi` or 
+consider making `@/re
+dux/features/courses/
+courseApi` a 
+package.  import/no-r
+elative-parent-import
+s
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: `react` 
+import should occur 
+before import of `@/r
+edux/features/courses
+/courseApi`  
+import/order
+3:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Courses.tsx` to 
+same directory as `..
+/Course/CourseCard` 
+or consider making `.
+./Course/CourseCard` 
+a package.  import/no
+-relative-parent-impo
+rts
+7:18  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+8:17  Error: 
+'isLoading' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/components/Rout
+e/Hero.tsx
+100:1  Error: 
+`motion/react` 
+import should occur 
+before import of 
+`react`  import/order
+101:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+101:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+102:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Hero.tsx` to same 
+directory as `@/compo
+nents/ui/button` or 
+consider making `@/co
+mponents/ui/button` 
+a package.  import/no
+-relative-parent-impo
+rts
+103:23  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Hero.tsx` to same 
+directory as `@/compo
+nents/ui/input` or 
+consider making `@/co
+mponents/ui/input` a 
+package.  import/no-r
+elative-parent-import
+s
+104:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+104:36  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Hero.tsx` to same 
+directory as 
+`@/lib/clientTTS` or 
+consider making 
+`@/lib/clientTTS` a 
+package.  import/no-r
+elative-parent-import
+s
+105:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Hero.tsx` to same 
+directory as `../../S
+peechProvider` or 
+consider making `../.
+./SpeechProvider` a 
+package.  import/no-r
+elative-parent-import
+s
+106:50  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Hero.tsx` to same 
+directory as `../Acce
+ssibility/Accessibili
+tyFeaturesDescription
+` or consider making 
+`../Accessibility/Acc
+essibilityFeaturesDes
+cription` a package. 
+ import/no-relative-p
+arent-imports
+107:1  Error: `../../
+hooks/useSpeechOnHove
+r` import should 
+occur before import 
+of `../../SpeechProvi
+der`  import/order
+107:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Hero.tsx` to same 
+directory as `../../h
+ooks/useSpeechOnHover
+` or consider making 
+`../../hooks/useSpeec
+hOnHover` a package. 
+ import/no-relative-p
+arent-imports
+
+./app/components/Rout
+e/Reviews.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:1  Error: `@/app/st
+yles/styles` import 
+should occur after 
+import of `react`  
+import/order
+1:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Reviews.tsx` to 
+same directory as `@/
+app/styles/styles` 
+or consider making `@
+/app/styles/styles` 
+a package.  import/no
+-relative-parent-impo
+rts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:17  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+4:25  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Reviews.tsx` to 
+same directory as `..
+/Reviews/ReviewsCard`
+ or consider making `
+../Reviews/ReviewsCar
+d` a package.  import
+/no-relative-parent-i
+mports
+53:18  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+
+./app/components/Skel
+eton.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:10  Error: 'cn' is 
+defined but never 
+used.  no-unused-vars
+2:1  Error: `react` 
+import should occur 
+before import of 
+`@/app/utils/cn`  
+import/order
+
+./app/components/Voic
+eFormHelp.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`VoiceFormHelp.tsx` 
+to same directory as 
+`../SpeechProvider` 
+or consider making 
+`../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:1  Error: 
+`lucide-react` 
+import should occur 
+before import of 
+`react`  import/order
+47:42  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+47:49  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+60:43  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+60:53  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+67:37  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+67:48  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+67:68  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+67:80  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+67:100  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+67:107  Error: `"` 
+can be escaped with 
+`&quot;`, `&ldquo;`, 
+`&#34;`, `&rdquo;`.  
+react/no-unescaped-en
+tities
+
+./app/components/Widg
+ets/DashboardWidgets.
+tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:17  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+3:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `Das
+hboardWidgets.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+5:29  Error: 'open' 
+is defined but never 
+used.  no-unused-vars
+
+./app/contexts/Access
+ibilityProvider.tsx
+48:58  Error: 'key' 
+is defined but never 
+used.  no-unused-vars
+48:66  Error: 
+'value' is defined 
+but never used.  
+no-unused-vars
+50:17  Error: 
+'action' is defined 
+but never used.  
+no-unused-vars
+51:17  Error: 
+'action' is defined 
+but never used.  
+no-unused-vars
+51:33  Error: 'keys' 
+is defined but never 
+used.  no-unused-vars
+231:6  Warning: 
+React Hook useEffect 
+has a missing 
+dependency: 
+'updateSetting'. 
+Either include it or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+
+./app/course/[id]/pag
+e.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:31  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Course/Cour
+seDetailsPage` or 
+consider making `@/ap
+p/components/Course/C
+ourseDetailsPage` a 
+package.  import/no-r
+elative-parent-import
+s
+2:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/components/Course/
+CourseDetailsPage`  
+import/order
+4:6  Error: 'Props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/course-access/[
+id]/page.tsx
+2:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Course/Cour
+seContent` or 
+consider making `@/ap
+p/components/Course/C
+ourseContent` a 
+package.  import/no-r
+elative-parent-import
+s
+3:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/c
+omponents/Loader` or 
+consider making `@/ap
+p/components/Loader` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/app/h
+ooks/useAuth` or 
+consider making `@/ap
+p/hooks/useAuth` a 
+package.  import/no-r
+elative-parent-import
+s
+5:1  Error: 
+`next/navigation` 
+import should occur 
+before import of `@/a
+pp/components/Course/
+CourseContent`  
+import/order
+6:1  Error: `react` 
+import should occur 
+before import of `@/a
+pp/components/Course/
+CourseContent`  
+import/order
+36:6  Warning: React 
+Hook useEffect has a 
+missing dependency: 
+'id'. Either include 
+it or remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+
+./app/courses/page.ts
+x
+2:44  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/redux
+/features/courses/cou
+rseApi` or consider 
+making `@/redux/featu
+res/courses/courseApi
+` a package.  import/
+no-relative-parent-im
+ports
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:37  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `@/redux
+/features/layout/layo
+utApi` or consider 
+making `@/redux/featu
+res/layout/layoutApi`
+ a package.  import/n
+o-relative-parent-imp
+orts
+4:1  Error: 
+`next/navigation` 
+import should occur 
+before import of `@/r
+edux/features/courses
+/courseApi`  
+import/order
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: `react` 
+import should occur 
+before import of `@/r
+edux/features/courses
+/courseApi`  
+import/order
+6:8  Error: 'Loader' 
+is defined but never 
+used.  no-unused-vars
+6:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Loader` or 
+consider making `../c
+omponents/Loader` a 
+package.  import/no-r
+elative-parent-import
+s
+7:1  Error: `../compo
+nents/Header` import 
+should occur before 
+import of `../compone
+nts/Loader`  
+import/order
+7:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Header` or 
+consider making `../c
+omponents/Header` a 
+package.  import/no-r
+elative-parent-import
+s
+8:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as 
+`../utils/Heading` 
+or consider making 
+`../utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+9:1  Error: 
+`../styles/styles` 
+import should occur 
+before import of 
+`../utils/Heading`  
+import/order
+9:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as 
+`../styles/styles` 
+or consider making 
+`../styles/styles` a 
+package.  import/no-r
+elative-parent-import
+s
+10:1  Error: `../comp
+onents/Course/CourseC
+ard` import should 
+occur before import 
+of `../components/Loa
+der`  import/order
+10:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Course/CourseC
+ard` or consider 
+making `../components
+/Course/CourseCard` 
+a package.  import/no
+-relative-parent-impo
+rts
+11:1  Error: `../comp
+onents/Course/CourseC
+ardSkeleton` import 
+should occur before 
+import of `../compone
+nts/Loader`  
+import/order
+11:32  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Course/CourseC
+ardSkeleton` or 
+consider making `../c
+omponents/Course/Cour
+seCardSkeleton` a 
+package.  import/no-r
+elative-parent-import
+s
+12:1  Error: `../comp
+onents/Footer` 
+import should occur 
+before import of `../
+components/Loader`  
+import/order
+12:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Footer` or 
+consider making `../c
+omponents/Footer` a 
+package.  import/no-r
+elative-parent-import
+s
+13:1  Error: `../comp
+onents/CategoryButton
+` import should 
+occur before import 
+of `../components/Loa
+der`  import/order
+13:28  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/CategoryButton
+` or consider making 
+`../components/Catego
+ryButton` a package. 
+ import/no-relative-p
+arent-imports
+17:15  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+51:6  Warning: React 
+Hook useEffect has 
+missing 
+dependencies: 
+'categoriesData' and 
+'courses'. Either 
+include them or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+
+./app/faq/page.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as 
+`../utils/Heading` 
+or consider making 
+`../utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+4:1  Error: `../compo
+nents/Header` import 
+should occur before 
+import of 
+`../utils/Heading`  
+import/order
+4:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Header` or 
+consider making `../c
+omponents/Header` a 
+package.  import/no-r
+elative-parent-import
+s
+5:1  Error: `../compo
+nents/Footer` import 
+should occur before 
+import of 
+`../utils/Heading`  
+import/order
+5:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Footer` or 
+consider making `../c
+omponents/Footer` a 
+package.  import/no-r
+elative-parent-import
+s
+6:1  Error: `../compo
+nents/FAQ/FAQ` 
+import should occur 
+before import of 
+`../utils/Heading`  
+import/order
+6:17  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/FAQ/FAQ` or 
+consider making `../c
+omponents/FAQ/FAQ` a 
+package.  import/no-r
+elative-parent-import
+s
+10:15  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+12:22  Error: 
+'setActiveItem' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/hooks/adminProt
+ected.tsx
+3:1  Error: `react` 
+import should occur 
+before import of 
+`react-redux`  
+import/order
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react-redux`  
+import/order
+5:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`adminProtected.tsx` 
+to same directory as 
+`../components/Loader
+` or consider making 
+`../components/Loader
+` a package.  import/
+no-relative-parent-im
+ports
+
+./app/hooks/useAuth.t
+sx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useAuth.tsx` to 
+same directory as `@/
+redux/features/api/ap
+iSlice` or consider 
+making `@/redux/featu
+res/api/apiSlice` a 
+package.  import/no-r
+elative-parent-import
+s
+2:1  Error: 
+`react-redux` import 
+should occur before 
+import of `@/redux/fe
+atures/api/apiSlice` 
+ import/order
+
+./app/hooks/useClickA
+ssistance.ts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+ClickAssistance.ts` 
+to same directory as 
+`../contexts/Accessib
+ilityProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+9:34  Error: 
+'NodeJS' is not 
+defined.  no-undef
+
+./app/hooks/useConfir
+mationDialog.ts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+ConfirmationDialog.ts
+` to same directory 
+as `../contexts/Acces
+sibilityProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+
+./app/hooks/useErrorP
+revention.ts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+ErrorPrevention.ts` 
+to same directory as 
+`../contexts/Accessib
+ilityProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+
+./app/hooks/useKeyboa
+rdShortcuts.ts
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react`  import/order
+5:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+KeyboardShortcuts.ts`
+ to same directory 
+as `../contexts/Acces
+sibilityProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+6:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+KeyboardShortcuts.ts`
+ to same directory 
+as 
+`../SpeechProvider` 
+or consider making 
+`../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+7:1  Error: `../hooks
+/useUndoRedo` import 
+should occur before 
+import of 
+`../SpeechProvider`  
+import/order
+23:11  Error: 
+'isTTSActive' is 
+assigned a value but 
+never used.  
+no-unused-vars
+23:35  Error: 'isVoic
+eControlActive' is 
+assigned a value but 
+never used.  
+no-unused-vars
+110:6  Warning: 
+React Hook 
+useCallback has a 
+missing dependency: 
+'processShortcut'. 
+Either include it or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+
+./app/hooks/useMurfTT
+S.tsx
+13:22  Error: 'Speech
+SynthesisVoice' is 
+not defined.  
+no-undef
+23:26  Error: 'Speech
+SynthesisVoice' is 
+not defined.  
+no-undef
+
+./app/hooks/useProfil
+eVoiceCommands.ts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react`  import/order
+4:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+ProfileVoiceCommands.
+ts` to same 
+directory as 
+`../SpeechProvider` 
+or consider making 
+`../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+8:15  Error: 
+'active' is defined 
+but never used.  
+no-unused-vars
+11:26  Error: 
+'command' is defined 
+but never used.  
+no-unused-vars
+59:33  Error: 
+'SpeechRecognition' 
+is not defined.  
+no-undef
+60:36  Error: 
+'NodeJS' is not 
+defined.  no-undef
+
+./app/hooks/useProtec
+ted.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useProtected.tsx` 
+to same directory as 
+`../components/Loader
+` or consider making 
+`../components/Loader
+` a package.  import/
+no-relative-parent-im
+ports
+4:1  Error: `@/redux/
+features/api/apiSlice
+` import should 
+occur before import 
+of `../components/Loa
+der`  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useProtected.tsx` 
+to same directory as 
+`@/redux/features/api
+/apiSlice` or 
+consider making `@/re
+dux/features/api/apiS
+lice` a package.  imp
+ort/no-relative-paren
+t-imports
+
+./app/hooks/useSpeech
+OnHover.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+SpeechOnHover.tsx` 
+to same directory as 
+`../SpeechProvider` 
+or consider making 
+`../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+12:22  Error: 'Speech
+SynthesisVoice' is 
+not defined.  
+no-undef
+15:26  Error: 'Speech
+SynthesisVoice' is 
+not defined.  
+no-undef
+
+./app/hooks/useTimeMa
+nagement.ts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `use
+TimeManagement.ts` 
+to same directory as 
+`../contexts/Accessib
+ilityProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+27:34  Error: 
+'NodeJS' is not 
+defined.  no-undef
+28:36  Error: 
+'NodeJS' is not 
+defined.  no-undef
+77:23  Warning: The 
+ref value 'warningSho
+wnRef.current' will 
+likely have changed 
+by the time this 
+effect cleanup 
+function runs. If 
+this ref points to a 
+node rendered by 
+React, copy 'warningS
+hownRef.current' to 
+a variable inside 
+the effect, and use 
+that variable in the 
+cleanup function.  re
+act-hooks/exhaustive-
+deps
+
+./app/hooks/useUndoRe
+do.ts
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:33  Error: 
+'useRef' is defined 
+but never used.  
+no-unused-vars
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useUndoRedo.ts` to 
+same directory as `..
+/contexts/Accessibili
+tyProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+
+./app/hooks/useVoiceA
+uth.ts
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useVoiceAuth.ts` to 
+same directory as `..
+/contexts/Accessibili
+tyProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+6:27  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useVoiceAuth.ts` to 
+same directory as 
+`../SpeechProvider` 
+or consider making 
+`../SpeechProvider` 
+a package.  import/no
+-relative-parent-impo
+rts
+15:20  Error: 
+'fieldName' is 
+defined but never 
+used.  no-unused-vars
+15:39  Error: 
+'value' is defined 
+but never used.  
+no-unused-vars
+17:14  Error: 
+'error' is defined 
+but never used.  
+no-unused-vars
+34:33  Error: 
+'SpeechRecognition' 
+is not defined.  
+no-undef
+38:36  Error: 
+'NodeJS' is not 
+defined.  no-undef
+43:11  Error: 'confir
+mationDialogs' is 
+assigned a value but 
+never used.  
+no-unused-vars
+113:46  Error: 
+'keyword' is not 
+defined.  no-undef
+127:6  Warning: 
+React Hook 
+useCallback has a 
+missing dependency: 
+'fieldMappings'. 
+Either include it or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+290:6  Warning: 
+React Hook 
+useCallback has an 
+unnecessary 
+dependency: 
+'isTTSActive'. 
+Either exclude it or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+733:56  Error: 
+'adminEmail' is not 
+defined.  no-undef
+734:59  Error: 
+'adminPassword' is 
+not defined.  
+no-undef
+809:30  Error: 
+'NodeJS' is not 
+defined.  no-undef
+1091:30  Error: 
+'NodeJS' is not 
+defined.  no-undef
+1213:32  Error: 
+'NodeJS' is not 
+defined.  no-undef
+1329:32  Error: 
+'NodeJS' is not 
+defined.  no-undef
+
+./app/hooks/useVoiceF
+ormFilling.ts
+11:20  Error: 
+'fieldId' is defined 
+but never used.  
+no-unused-vars
+11:37  Error: 
+'value' is defined 
+but never used.  
+no-unused-vars
+12:26  Error: 
+'command' is defined 
+but never used.  
+no-unused-vars
+28:33  Error: 
+'SpeechRecognition' 
+is not defined.  
+no-undef
+119:6  Warning: 
+React Hook 
+useCallback has a 
+missing dependency: 
+'fieldMappings'. 
+Either include it or 
+remove the 
+dependency array.  re
+act-hooks/exhaustive-
+deps
+
+./app/hooks/useVoiceN
+avigation.ts
+3:1  Error: 
+`next/navigation` 
+import should occur 
+before import of 
+`react`  import/order
+8:7  Error: 'MIN_CONF
+IDENCE_THRESHOLD' is 
+assigned a value but 
+never used.  
+no-unused-vars
+46:26  Error: 
+'command' is defined 
+but never used.  
+no-unused-vars
+47:30  Error: 
+'isListening' is 
+defined but never 
+used.  no-unused-vars
+48:12  Error: 'text' 
+is defined but never 
+used.  no-unused-vars
+48:26  Error: 
+'options' is defined 
+but never used.  
+no-unused-vars
+61:33  Error: 
+'SpeechRecognition' 
+is not defined.  
+no-undef
+63:36  Error: 
+'NodeJS' is not 
+defined.  no-undef
+271:13  Error: 
+'confidence' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/layout.tsx
+4:15  Error: 
+'Metadata' is 
+defined but never 
+used.  no-unused-vars
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: `./utils/
+theme-provider` 
+import should occur 
+after import of `./co
+ntexts/AccessibilityP
+rovider`  
+import/order
+7:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+7:1  Error: 
+`react-hot-toast` 
+import should occur 
+after import of 
+`react`  import/order
+8:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+8:1  Error: 
+`./Provider` import 
+should occur after 
+import of `./contexts
+/AccessibilityProvide
+r`  import/order
+10:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:1  Error: `@/redux
+/features/api/apiSlic
+e` import should 
+occur after import 
+of 
+`socket.io-client`  
+import/order
+11:10  Error: 
+'useLoadUserQuery' 
+is defined but never 
+used.  no-unused-vars
+11:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`layout.tsx` to same 
+directory as `@/redux
+/features/api/apiSlic
+e` or consider 
+making `@/redux/featu
+res/api/apiSlice` a 
+package.  import/no-r
+elative-parent-import
+s
+12:1  Error: `./compo
+nents/Loader` import 
+should occur after 
+import of 
+`socket.io-client`  
+import/order
+12:8  Error: 
+'Loader' is defined 
+but never used.  
+no-unused-vars
+13:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+13:1  Error: 
+`./hooks/useAuth` 
+import should occur 
+after import of `./co
+ntexts/AccessibilityP
+rovider`  
+import/order
+16:1  Error: 
+`./SpeechProvider` 
+import should occur 
+after import of `./co
+ntexts/AccessibilityP
+rovider`  
+import/order
+38:5  Error: 'JSX' 
+is not defined.  
+no-undef
+86:9  Error: 
+Unexpected empty 
+object pattern.  
+no-empty-pattern
+
+./app/loading.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+
+./app/page.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:1  Error: 
+`./utils/Heading` 
+import should occur 
+after import of `./co
+mponents/Accessibilit
+y/GlobalAccessibility
+`  import/order
+4:1  Error: `./compon
+ents/Header` import 
+should occur after 
+import of `./componen
+ts/Accessibility/Glob
+alAccessibility`  
+import/order
+5:1  Error: `./compon
+ents/Route/Hero` 
+import should occur 
+after import of `./co
+mponents/Accessibilit
+y/GlobalAccessibility
+`  import/order
+7:1  Error: `./compon
+ents/Route/Courses` 
+import should occur 
+after import of `./co
+mponents/Accessibilit
+y/GlobalAccessibility
+`  import/order
+8:1  Error: `./compon
+ents/Route/Reviews` 
+import should occur 
+after import of `./co
+mponents/Accessibilit
+y/GlobalAccessibility
+`  import/order
+9:1  Error: `./compon
+ents/FAQ/FAQ` import 
+should occur after 
+import of `./componen
+ts/Accessibility/Glob
+alAccessibility`  
+import/order
+10:1  Error: `./compo
+nents/Footer` import 
+should occur after 
+import of `./componen
+ts/Accessibility/Glob
+alAccessibility`  
+import/order
+16:26  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+18:22  Error: 
+'setActiveItem' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/policy/page.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as 
+`../utils/Heading` 
+or consider making 
+`../utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:1  Error: `../compo
+nents/Header` import 
+should occur before 
+import of 
+`../utils/Heading`  
+import/order
+4:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Header` or 
+consider making `../c
+omponents/Header` a 
+package.  import/no-r
+elative-parent-import
+s
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: `../compo
+nents/Footer` import 
+should occur before 
+import of 
+`../utils/Heading`  
+import/order
+6:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Footer` or 
+consider making `../c
+omponents/Footer` a 
+package.  import/no-r
+elative-parent-import
+s
+10:15  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+12:22  Error: 
+'setActiveItem' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/policy/Policy.t
+sx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+1:28  Error: 
+'useState' is 
+defined but never 
+used.  no-unused-vars
+2:24  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Policy.tsx` to same 
+directory as 
+`../styles/styles` 
+or consider making 
+`../styles/styles` a 
+package.  import/no-r
+elative-parent-import
+s
+5:17  Error: 'props' 
+is defined but never 
+used.  no-unused-vars
+
+./app/profile/page.ts
+x
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:23  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../hook
+s/useProtected` or 
+consider making `../h
+ooks/useProtected` a 
+package.  import/no-r
+elative-parent-import
+s
+4:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as 
+`../utils/Heading` 
+or consider making 
+`../utils/Heading` a 
+package.  import/no-r
+elative-parent-import
+s
+5:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+5:1  Error: `../compo
+nents/Header` import 
+should occur before 
+import of `../hooks/u
+seProtected`  
+import/order
+5:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Header` or 
+consider making `../c
+omponents/Header` a 
+package.  import/no-r
+elative-parent-import
+s
+6:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+6:1  Error: 
+`react-redux` import 
+should occur before 
+import of `../hooks/u
+seProtected`  
+import/order
+7:1  Error: `../compo
+nents/Profile/Profile
+` import should 
+occur before import 
+of `../hooks/useProte
+cted`  import/order
+7:21  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Profile/Profil
+e` or consider 
+making `../components
+/Profile/Profile` a 
+package.  import/no-r
+elative-parent-import
+s
+8:1  Error: `../compo
+nents/Footer` import 
+should occur before 
+import of `../hooks/u
+seProtected`  
+import/order
+8:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`page.tsx` to same 
+directory as `../comp
+onents/Footer` or 
+consider making `../c
+omponents/Footer` a 
+package.  import/no-r
+elative-parent-import
+s
+12:26  Error: 
+'props' is defined 
+but never used.  
+no-unused-vars
+14:22  Error: 
+'setActiveItem' is 
+assigned a value but 
+never used.  
+no-unused-vars
+
+./app/Provider.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+3:23  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`Provider.tsx` to 
+same directory as 
+`../redux/store` or 
+consider making 
+`../redux/store` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/SpeechProvider.
+tsx
+4:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+11:11  Error: 'text' 
+is defined but never 
+used.  no-unused-vars
+11:25  Error: 
+'options' is defined 
+but never used.  
+no-unused-vars
+52:52  Error: 
+'listening' is 
+defined but never 
+used.  no-unused-vars
+69:34  Error: 
+'event' is defined 
+but never used.  
+no-unused-vars
+77:71  Error: 
+'EventListener' is 
+not defined.  
+no-undef
+79:76  Error: 
+'EventListener' is 
+not defined.  
+no-undef
+
+./app/utils/CoursePla
+yer.tsx
+1:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`CoursePlayer.tsx` 
+to same directory as 
+`@/app/hooks/useSpeec
+hOnHover` or 
+consider making `@/ap
+p/hooks/useSpeechOnHo
+ver` a package.  impo
+rt/no-relative-parent
+-imports
+3:1  Error: `@mux/mux
+-player-react` 
+import should occur 
+before import of 
+`react`  import/order
+33:62  Error: 
+Unnecessary escape 
+character: \/.  
+no-useless-escape
+
+./app/utils/CustomMod
+al.tsx
+2:1  Error: 
+`@mui/material` 
+import should occur 
+before import of 
+`react`  import/order
+2:28  Error: Unable 
+to resolve path to 
+module 
+'@mui/material'.  
+import/no-unresolved
+6:13  Error: 'open' 
+is defined but never 
+used.  no-unused-vars
+9:15  Error: 'route' 
+is defined but never 
+used.  no-unused-vars
+24:7  Warning: 
+aria-labelleby: This 
+attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-labelledby?  
+jsx-a11y/aria-props
+25:7  Warning: 
+aria-describeby: 
+This attribute is an 
+invalid ARIA 
+attribute. Did you 
+mean to use 
+aria-describedby?  
+jsx-a11y/aria-props
+
+./app/utils/NavItems.
+tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:17  Error: 'FC' is 
+defined but never 
+used.  no-unused-vars
+3:30  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`NavItems.tsx` to 
+same directory as `..
+/hooks/useSpeechOnHov
+er` or consider 
+making `../hooks/useS
+peechOnHover` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./app/utils/theme-pro
+vider.tsx
+2:1  Error: `react` 
+import should occur 
+after type import of 
+`next-themes/dist/typ
+es`  import/order
+
+./app/utils/ThemeSwit
+cher.tsx
+3:1  Error: 
+`next-themes` import 
+should occur before 
+import of `react`  
+import/order
+
+./app/utils/useConfir
+mAction.ts
+43:8  Error: Parsing 
+error: '>' expected.
+
+./app/utils/useUndoRe
+do.ts
+3:1  Error: `../hooks
+/useUndoRedo` import 
+should occur after 
+import of `../hooks/u
+seKeyboardShortcuts` 
+ import/order
+3:48  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useUndoRedo.ts` to 
+same directory as `..
+/hooks/useUndoRedo` 
+or consider making `.
+./hooks/useUndoRedo` 
+a package.  import/no
+-relative-parent-impo
+rts
+4:34  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useUndoRedo.ts` to 
+same directory as `..
+/contexts/Accessibili
+tyProvider` or 
+consider making `../c
+ontexts/Accessibility
+Provider` a package. 
+ import/no-relative-p
+arent-imports
+5:38  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`useUndoRedo.ts` to 
+same directory as `..
+/hooks/useKeyboardSho
+rtcuts` or consider 
+making `../hooks/useK
+eyboardShortcuts` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./pages/api/auth/[...
+nextauth].ts
+2:1  Error: `next-aut
+h/providers/github` 
+import should occur 
+before import of `nex
+t-auth/providers/goog
+le`  import/order
+3:1  Error: 
+`next-auth/next` 
+import should occur 
+before import of `nex
+t-auth/providers/goog
+le`  import/order
+
+./components/ui/anima
+ted-shiny-text.tsx
+2:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+2:1  Error: 
+`framer-motion` 
+import should occur 
+before import of 
+`react`  import/order
+3:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move `ani
+mated-shiny-text.tsx`
+ to same directory 
+as `@/lib/utils` or 
+consider making 
+`@/lib/utils` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./components/ui/butto
+n.tsx
+1:1  Error: `react` 
+import should occur 
+after import of `clas
+s-variance-authority`
+  import/order
+5:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`button.tsx` to same 
+directory as 
+`@/lib/utils` or 
+consider making 
+`@/lib/utils` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./components/ui/input
+.tsx
+3:1  Error: There 
+should be at least 
+one empty line 
+between import 
+groups  import/order
+4:20  Error: 
+Relative imports 
+from parent 
+directories are not 
+allowed. Please 
+either pass what 
+you're importing 
+through at runtime 
+(dependency 
+injection), move 
+`input.tsx` to same 
+directory as 
+`@/lib/utils` or 
+consider making 
+`@/lib/utils` a 
+package.  import/no-r
+elative-parent-import
+s
+
+./lib/clientTTS.ts
+5:18  Error: 'SpeechS
+ynthesisVoice' is 
+not defined.  
+no-undef
+15:31  Error: 'Speech
+SynthesisVoice' is 
+not defined.  
+no-undef
+15:56  Error: 'Speech
+SynthesisVoice' is 
+not defined.  
+no-undef
+
+./lib/murfApi.ts
+2:63  Error: Unable 
+to resolve path to 
+module './types'.  
+import/no-unresolved
+41:18  Error: 'Genera
+teSpeechRequest' is 
+already defined.  
+no-redeclare
+73:18  Error: 'Genera
+teSpeechResponse' is 
+already defined.  
+no-redeclare
+
+info  - Need to 
+disable some ESLint 
+rules? Learn more 
+here: https://nextjs.
+org/docs/basic-featur
+es/eslint#disabling-r
+ules
