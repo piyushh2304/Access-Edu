@@ -24,8 +24,6 @@ app.use(
   cors({
     origin: (origin, callback) => {
       const allowedOrigins = [
-        "http://localhost:3000",
-        "http://localhost:3001",
         "https://access-edu.vercel.app",
         "https://access-edu-production.up.railway.app",
       ];

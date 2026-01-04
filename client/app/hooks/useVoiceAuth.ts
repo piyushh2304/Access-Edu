@@ -120,19 +120,32 @@ export function useVoiceAuth({
     recognition.continuous = true;
     recognition.lang = 'en-US';
 
+    // Track if a fatal error occurred (like permission denied) to prevent restart loop
+    let fatalError = false;
+
     recognition.onstart = () => setListening(true);
     recognition.onend = () => {
       setListening(false);
-      if (isActive && !restartingRef.current) {
+      if (isActive && !restartingRef.current && !fatalError) {
         restartingRef.current = true;
         setTimeout(() => {
-          recognition.start();
+          // Check isActive again in case it changed during timeout
+          if (isActive) {
+            try {
+              recognition.start();
+            } catch (e) {
+              console.error("Failed to restart speech recognition", e);
+            }
+          }
           restartingRef.current = false;
         }, 500);
       }
     };
 
     recognition.onerror = e => {
+      if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
+        fatalError = true;
+      }
       if (e.error !== 'no-speech') {
         onError?.(e.error);
       }
@@ -140,7 +153,12 @@ export function useVoiceAuth({
 
     recognition.onresult = handleResult;
 
-    recognition.start();
+    try {
+      recognition.start();
+    } catch (e) {
+      console.error("Speech recognition start failed", e);
+    }
+
     recognitionRef.current = recognition;
 
     return () => {
