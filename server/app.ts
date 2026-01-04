@@ -19,9 +19,38 @@ app.use(express.json({ limit: "50mb" }));
 app.use(cookieParser());
 
 // cors => cors origin resource sharing
+// cors => cors origin resource sharing
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://access-edu.vercel.app"],
+    origin: (origin, callback) => {
+      const allowedOrigins = [
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "https://access-edu.vercel.app",
+        "https://access-edu-production.up.railway.app",
+      ];
+
+      if (process.env.ORIGIN) {
+        try {
+          // parse if it's a JSON array string
+          const envOrigin = JSON.parse(process.env.ORIGIN);
+          if (Array.isArray(envOrigin)) {
+            allowedOrigins.push(...envOrigin);
+          } else {
+            allowedOrigins.push(process.env.ORIGIN);
+          }
+        } catch {
+          // fallback if it's just a simple string
+          allowedOrigins.push(process.env.ORIGIN);
+        }
+      }
+
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
