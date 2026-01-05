@@ -223,7 +223,16 @@ export const useVoiceNavigation = ({
         return;
       }
 
-      // Ignore "no-speech" errors silently
+      // Handle permission denied error
+      if (event.error === 'not-allowed') {
+        toast.error('Microphone permission denied. Please allow microphone access to use voice commands.');
+        setIsListening(false);
+        onListeningStatusChange?.(false);
+        return;
+      }
+
+      // Ignore "no-speech" errors silently, but maybe hint user if it keeps happening?
+      // For now, keep silent restart logic
       if (event.error === 'no-speech') {
         if (restartTimeoutRef.current) {
           clearTimeout(restartTimeoutRef.current);
@@ -239,6 +248,12 @@ export const useVoiceNavigation = ({
       }
 
       console.error('Speech recognition error:', event.error);
+
+      // Generic error toast for other errors, but debounce it or make it less intrusive
+      if (event.error !== 'no-speech') {
+        // toast.error(`Voice error: ${event.error}`); // Optional: uncomment if you want to show all errors
+      }
+
       setIsListening(false);
       onListeningStatusChange?.(false);
 
