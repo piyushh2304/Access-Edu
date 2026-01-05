@@ -169,8 +169,10 @@ export const logoutUser = CatchAsyncError(async (req: Request, res: Response, ne
         res.cookie("admin_access_token", "", { maxAge: 1 })
         res.cookie("admin_refresh_token", "", { maxAge: 1 })
 
-        const userId = req.user?._id || ""
-        redis.del(userId)
+        try {
+            const userId = req.user?._id || ""
+            if (userId) await redis.del(userId)
+        } catch (e) { console.error('Redis del failed', e) }
 
         res.status(200).json({
             success: true,
@@ -206,17 +208,22 @@ export const updateAccessToken = CatchAsyncError(async (req: Request, res: Respo
             return next(new ErrorHandler(message, 400))
         }
 
-        const session = await redis.get(decoded.id as string)
-
-        if (!session) {
-            return next(new ErrorHandler("Please login for access this resources", 400))
-        }
-
         let user;
         try {
-            user = JSON.parse(session);
+            const session = await redis.get(decoded.id as string);
+            if (session) {
+                user = JSON.parse(session);
+            }
         } catch (error) {
-            return next(new ErrorHandler("Invalid session", 400));
+            console.error('Redis error', error);
+        }
+
+        if (!user) {
+            user = await userModel.findById(decoded.id);
+            // If still no user, then fail
+            if (!user) {
+                return next(new ErrorHandler("Please login for access this resources", 400))
+            }
         }
 
         const accessToken = jwt.sign({ id: user._id }, process.env.ACCESS_TOKEN as string, {
@@ -235,7 +242,11 @@ export const updateAccessToken = CatchAsyncError(async (req: Request, res: Respo
         res.cookie(accessTokenName, accessToken, accessTokenOptions)
         res.cookie(refreshTokenName, refreshToken, refreshTokenOptions)
 
-        await redis.set(user._id, JSON.stringify(user), "EX", 31536000) // 365 days
+        try {
+            await redis.set(user._id, JSON.stringify(user), "EX", 31536000) // 365 days
+        } catch (err) {
+            console.error('Redis set failed', err);
+        }
 
         next()
 
@@ -316,7 +327,9 @@ export const updateUserInfo = CatchAsyncError(
 
             await user?.save()
 
-            await redis.set(userId, JSON.stringify(user))
+            try {
+                await redis.set(userId, JSON.stringify(user))
+            } catch (e) { console.error('Redis set failed', e) }
 
             res.status(201).json({
                 success: true,
@@ -362,7 +375,9 @@ export const updatePassword = CatchAsyncError(
 
             await user?.save()
 
-            await redis.set(req.user?._id, JSON.stringify(user))
+            try {
+                await redis.set(req.user?._id, JSON.stringify(user))
+            } catch (e) { console.error('Redis set failed', e) }
 
             res.status(201).json({
                 success: true,
@@ -412,7 +427,9 @@ export const updateProfilePicture = CatchAsyncError(
 
             await user?.save()
 
-            await redis.set(userId, JSON.stringify(user))
+            try {
+                await redis.set(userId, JSON.stringify(user))
+            } catch (e) { console.error('Redis set failed', e) }
 
             res.status(201).json({
                 success: true,
@@ -470,7 +487,9 @@ export const deleteUser = CatchAsyncError(
 
             await user.deleteOne()
 
-            await redis.del(id)
+            try {
+                await redis.del(id)
+            } catch (e) { console.error('Redis del failed', e) }
 
             res.status(200).json({
                 success: true,

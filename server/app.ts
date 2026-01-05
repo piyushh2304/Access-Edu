@@ -46,7 +46,7 @@ app.use(
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
-        callback(new Error("Not allowed by CORS"));
+        callback(null, false);
       }
     },
     credentials: true,
@@ -64,6 +64,7 @@ const limiter = rateLimit({
 // routers
 app.use(
   "/api/v1",
+  limiter,
   userRouter,
   courseRouter,
   orderRouter,
@@ -88,6 +89,6 @@ app.all("*", (req: Request, res: Response, next: NextFunction) => {
 });
 
 // midleware call
-app.use(limiter);
+// app.use(limiter);
 
 app.use(ErrorMidleware);

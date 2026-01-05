@@ -2,19 +2,30 @@ import { Server as SocketIOServer } from "socket.io";
 import http from "http";
 
 export const initSocketServer = (server: http.Server) => {
+  const allowedOrigins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://access-edu.vercel.app",
+    "https://access-edu-production.up.railway.app",
+  ];
+
+  if (process.env.ORIGIN) {
+    try {
+      if (process.env.ORIGIN.startsWith("[")) {
+        const extra = JSON.parse(process.env.ORIGIN);
+        allowedOrigins.push(...extra);
+      } else {
+        allowedOrigins.push(process.env.ORIGIN);
+      }
+    } catch (e) {
+      console.warn('Failed to parse ORIGIN env var', e);
+      allowedOrigins.push(process.env.ORIGIN);
+    }
+  }
+
   const io = new SocketIOServer(server, {
     cors: {
-      origin: [
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "https://access-edu.vercel.app",
-        "https://access-edu-production.up.railway.app",
-        ...(process.env.ORIGIN ? (
-          process.env.ORIGIN.startsWith("[")
-            ? JSON.parse(process.env.ORIGIN)
-            : [process.env.ORIGIN]
-        ) : [])
-      ],
+      origin: allowedOrigins,
       methods: ["GET", "POST"],
       credentials: true,
     },

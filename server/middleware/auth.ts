@@ -4,6 +4,7 @@ import ErrorHandler from "../utils/ErrorHandler"
 import jwt, { JwtPayload } from "jsonwebtoken"
 import { redis } from "../utils/redis"
 import { updateAccessToken } from "../controllers/user.controller"
+import userModel from "../models/user.model"
 
 // authenticated user
 export const isAuthenticated = CatchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
@@ -50,14 +51,27 @@ export const isAuthenticated = CatchAsyncError(async (req: Request, res: Respons
     } else {
         const redisKey = decoded.id;
         console.log(`[DEBUG] Checking Redis Session Key: ${redisKey}`);
-        const user = await redis.get(redisKey)
 
-        if (!user) {
-            console.log(`[DEBUG] Redis Key ${redisKey} NOT FOUND`);
-            return next(new ErrorHandler("Please login to access this resource", 400));
+        let user;
+        try {
+            const session = await redis.get(redisKey);
+            if (session) {
+                user = JSON.parse(session);
+            }
+        } catch (err) {
+            console.error('[WARN] Redis get failed, falling back to DB:', err);
         }
 
-        req.user = JSON.parse(user)
+        if (!user) {
+            console.log(`[DEBUG] Redis Key ${redisKey} NOT FOUND or Redis down, checking DB`);
+            // Fallback to MongoDB
+            user = await userModel.findById(decoded.id);
+            if (!user) {
+                return next(new ErrorHandler("Please login to access this resource", 400));
+            }
+        }
+
+        req.user = user;
 
         next()
     }
