@@ -193,28 +193,6 @@ export const useVoiceNavigation = ({
       console.log('Voice navigation listening started...');
     };
 
-    recognitionRef.current.onend = () => {
-      setIsListening(false);
-      isStartingRef.current = false;
-      onListeningStatusChange?.(false);
-      console.log('Voice navigation listening stopped.');
-
-      if (isActive && recognitionRef.current) {
-        // Clear any pending restart
-        if (restartTimeoutRef.current) {
-          clearTimeout(restartTimeoutRef.current);
-        }
-
-        // If still active, restart listening after a short delay
-        restartTimeoutRef.current = setTimeout(() => {
-          if (isActive && recognitionRef.current) {
-            safeStart();
-          }
-          restartTimeoutRef.current = null;
-        }, 500);
-      }
-    };
-
     recognitionRef.current.onerror = (event) => {
       isStartingRef.current = false;
 
@@ -225,14 +203,17 @@ export const useVoiceNavigation = ({
 
       // Handle permission denied error
       if (event.error === 'not-allowed') {
-        toast.error('Microphone permission denied. Please allow microphone access to use voice commands.');
+        // Only show toast once
+        if (!permissionDeniedRef.current) {
+          toast.error('Microphone permission denied. Please allow microphone access to use voice commands.');
+          permissionDeniedRef.current = true;
+        }
         setIsListening(false);
         onListeningStatusChange?.(false);
         return;
       }
 
-      // Ignore "no-speech" errors silently, but maybe hint user if it keeps happening?
-      // For now, keep silent restart logic
+      // Ignore "no-speech" errors silently
       if (event.error === 'no-speech') {
         if (restartTimeoutRef.current) {
           clearTimeout(restartTimeoutRef.current);
@@ -249,16 +230,16 @@ export const useVoiceNavigation = ({
 
       console.error('Speech recognition error:', event.error);
 
-      // Generic error toast for other errors, but debounce it or make it less intrusive
-      if (event.error !== 'no-speech') {
-        // toast.error(`Voice error: ${event.error}`); // Optional: uncomment if you want to show all errors
+      // Generic error toast for other errors
+      if (event.error !== 'no-speech' && event.error !== 'not-allowed') {
+        // toast.error(`Voice error: ${event.error}`); 
       }
 
       setIsListening(false);
       onListeningStatusChange?.(false);
 
       if (isActive && recognitionRef.current) {
-        // Attempt to restart on error if still active
+        // Attempt to restart on error if still active and NOT a permission issue
         if (restartTimeoutRef.current) {
           clearTimeout(restartTimeoutRef.current);
         }
@@ -269,6 +250,33 @@ export const useVoiceNavigation = ({
           }
           restartTimeoutRef.current = null;
         }, 1000);
+      }
+    };
+
+    recognitionRef.current.onend = () => {
+      setIsListening(false);
+      isStartingRef.current = false;
+      onListeningStatusChange?.(false);
+      console.log('Voice navigation listening stopped.');
+
+      // STOP RESTARTING IF PERMISSION DENIED
+      if (permissionDeniedRef.current) {
+        return;
+      }
+
+      if (isActive && recognitionRef.current) {
+        // Clear any pending restart
+        if (restartTimeoutRef.current) {
+          clearTimeout(restartTimeoutRef.current);
+        }
+
+        // If still active, restart listening after a short delay
+        restartTimeoutRef.current = setTimeout(() => {
+          if (isActive && recognitionRef.current) {
+            safeStart();
+          }
+          restartTimeoutRef.current = null;
+        }, 500);
       }
     };
 
