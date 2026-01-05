@@ -23,31 +23,8 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: (origin, callback) => {
-      const allowedOrigins = [
-        "https://access-edu.vercel.app",
-        "https://access-edu-production.up.railway.app",
-      ];
-
-      if (process.env.ORIGIN) {
-        try {
-          // parse if it's a JSON array string
-          const envOrigin = JSON.parse(process.env.ORIGIN);
-          if (Array.isArray(envOrigin)) {
-            allowedOrigins.push(...envOrigin);
-          } else {
-            allowedOrigins.push(process.env.ORIGIN);
-          }
-        } catch {
-          // fallback if it's just a simple string
-          allowedOrigins.push(process.env.ORIGIN);
-        }
-      }
-
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(null, false);
-      }
+      // ALLOW ALL ORIGINS
+      callback(null, true);
     },
     credentials: true,
   })
