@@ -15,8 +15,26 @@ cloudinary.config({
 
 initSocketServer(server);
 
-// create server
-server.listen(process.env.PORT || 8000, () => {
-  console.log(`Server is connected with port ${process.env.PORT || 8000}`);
-  connectDB();
+// Handle uncaught exceptions
+process.on("uncaughtException", (err) => {
+  console.error("Uncaught Exception: ", err);
+  console.log("Shutting down the server due to Uncaught Exception");
+  // process.exit(1); // Do not exit in production for now to debug
 });
+
+// Handle unhandled promise rejections
+process.on("unhandledRejection", (err: any) => {
+  console.error("Unhandled Rejection: ", err.message);
+  console.log("Shutting down the server due to Unhandled Promise Rejection");
+  // server.close(() => process.exit(1)); // Do not exit
+});
+
+// create server
+try {
+  server.listen(process.env.PORT || 8000, () => {
+    console.log(`Server is connected with port ${process.env.PORT || 8000}`);
+    connectDB();
+  });
+} catch (error: any) {
+  console.error("Server start failed:", error);
+}
