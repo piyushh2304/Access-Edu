@@ -51,7 +51,7 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
   const signUpLinkRef = useSpeechOnHover<HTMLSpanElement>('Sign up link');
 
   useEffect(() => {
-    if (isSuccess) {
+    if (isSuccess && user) {
       if (user.role === "admin") {
         toast.success("Welcome Admin");
         router.push("/admin");
@@ -143,7 +143,7 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
           <input ref={loginButtonRef} type="submit" value="Login" className={`${styles.button}`} />
         </div>
         <br />
-        <h5 ref={orJoinWithRef} tabIndex={0} className="text-center pt-4 font-Poopins text-[14px] text-black dark:text-white">
+        <h5 ref={orJoinWithRef} tabIndex={0} className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
           Or join with
         </h5>
         <div className="flex items-center justify-center my-3">
@@ -163,7 +163,7 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
           />
         </div>
         <h5 ref={notHaveAccountRef} tabIndex={0} className="text-center pt-4 font-Poppins text-[14px]">
-          Not have any accout?
+          Not have any account?
           <span
             ref={signUpLinkRef}
             tabIndex={0}

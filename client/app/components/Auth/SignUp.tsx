@@ -63,8 +63,10 @@ const SignUp: FC<Props> = ({ setRoute }) => {
         initialValues: { name: "", email: "", password: "", role: "user" }
         , validationSchema: schema
         , onSubmit: async ({ name, email, password, role }) => {
+            console.log("🚀 [DEBUG] SignUp onSubmit started", { name, email, role });
             try {
                 const res = await register({ name, email, password, role }).unwrap()
+                console.log("✅ [DEBUG] SignUp register response:", res);
                 const token = res?.activationToken
                 const code = res?.activationCode
 
@@ -111,7 +113,7 @@ const SignUp: FC<Props> = ({ setRoute }) => {
                     >
                         Enter your Name
                     </label>
-                    <input type="name"
+                    <input type="text"
                         ref={nameInputRef}
                         name='name' // Corrected name attribute
                         value={values.name}
@@ -223,7 +225,7 @@ const SignUp: FC<Props> = ({ setRoute }) => {
                 <h5
                     ref={orJoinWithRef}
                     tabIndex={0}
-                    className='text-center pt-4 font-Poopins text-[14px] text-black dark:text-white'
+                    className='text-center pt-4 font-Poppins text-[14px] text-black dark:text-white'
                 >
                     Or join with
                 </h5>

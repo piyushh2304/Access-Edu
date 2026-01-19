@@ -6,7 +6,7 @@ import { ThemeSwitcher } from "../utils/ThemeSwitcher";
 import { HiOutlineMenuAlt3, HiOutlineUserCircle, HiOutlineX } from "react-icons/hi";
 import CustomModal from "../utils/CustomModal";
 import Login from "../components/Auth/Login";
-import SignUp from "../components/Auth/ٍSignUp";
+import SignUp from "../components/Auth/SignUp";
 import Verification from "./Auth/Verification";
 import { useSelector } from "react-redux";
 import Image from "next/image";
@@ -223,7 +223,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
           toast.success("Login successfully");
         }
       }
-      if (data === null && !isLoading && !userData) {
+      if (data === null && !isLoading && userData) {
         setLogout(true);
       }
     }

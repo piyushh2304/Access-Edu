@@ -31,7 +31,7 @@ export const isAuthenticated = CatchAsyncError(async (req: Request, res: Respons
 
     // console.log(access_token)
     if (!access_token) {
-        return next(new ErrorHandler("Please login to access this resource", 400));
+        return next(new ErrorHandler("Please login to access this resource", 401));
     }
 
     const decoded = jwt.decode(access_token) as JwtPayload
@@ -67,7 +67,7 @@ export const isAuthenticated = CatchAsyncError(async (req: Request, res: Respons
             // Fallback to MongoDB
             user = await userModel.findById(decoded.id);
             if (!user) {
-                return next(new ErrorHandler("Please login to access this resource", 400));
+                return next(new ErrorHandler("Please login to access this resource", 401));
             }
         }
 

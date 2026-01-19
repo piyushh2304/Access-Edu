@@ -17,7 +17,7 @@ import { SpeechProvider } from "./SpeechProvider"; // Import SpeechProvider
 import { AccessibilityProvider } from "./contexts/AccessibilityProvider"; // Import AccessibilityProvider
 
 const ENDPOINT = process.env.NEXT_PUBLIC_SOCKET_SERVER_URI || "";
-const socket = socketIO(ENDPOINT, { transports: ["websocket"] });
+const socket = socketIO(ENDPOINT);
 
 const poppins = Poppins({
   subsets: ["latin"],

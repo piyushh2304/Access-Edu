@@ -170,7 +170,7 @@ export const logoutUser = CatchAsyncError(async (req: Request, res: Response, ne
         res.cookie("admin_refresh_token", "", { maxAge: 1 })
 
         try {
-            const userId = req.user?._id || ""
+            const userId = (req.user as any)?._id || ""
             if (userId) await redis.del(userId)
         } catch (e) { console.error('Redis del failed', e) }
 
