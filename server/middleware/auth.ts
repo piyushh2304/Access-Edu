@@ -9,6 +9,10 @@ import userModel from "../models/user.model"
 // authenticated user
 export const isAuthenticated = CatchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
     let access_token = req.cookies.access_token as string;
+    const authHeader = req.headers.authorization;
+    if (authHeader && authHeader.startsWith("Bearer ")) {
+        access_token = authHeader.split(" ")[1];
+    }
     const admin_access_token = req.cookies.admin_access_token as string;
 
     console.log("Cookies:", req.cookies); // Debugging

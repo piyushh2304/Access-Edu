@@ -4,7 +4,14 @@ import { userLoggedIn } from "../auth/authSlice";
 export const apiSlice = createApi({
     reducerPath: "api",
     baseQuery: fetchBaseQuery({
-        baseUrl: process.env.NEXT_PUBLIC_SERVER_URI
+        baseUrl: process.env.NEXT_PUBLIC_SERVER_URI,
+        prepareHeaders: (headers, { getState }) => {
+            const token = (getState() as any).auth.token;
+            if (token) {
+                headers.set("authorization", `Bearer ${token}`);
+            }
+            return headers;
+        },
     }),
     endpoints: (builder) => ({
         refreshToken: builder.query({
