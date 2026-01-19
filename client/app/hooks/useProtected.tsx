@@ -12,11 +12,14 @@ export default function Protected({ children }: ProtectedProps) {
     refetchOnMountOrArgChange: true,
   });
 
+  console.log("🔒 [DEBUG] Protected component:", { isLoading, isError, user: data?.user });
+
   if (isLoading) {
     return <Loader />;
   }
 
   if (isError || !data?.user) {
+    console.log("🚫 [DEBUG] Protected: Access denied, redirecting to home");
     return redirect("/");
   }
 

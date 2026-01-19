@@ -150,8 +150,8 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
   const {
     data: userData,
     isLoading,
+    refetch
   } = useAuth();
-  const { data: loadUserData, refetch } = useLoadUserQuery(undefined, { skip: !!userData?.user });
   const { data } = useSession();
   const [socialAuth, { isSuccess, error }] = useSocialAuthMutation();
   const [logout, setLogout] = useState(false);
@@ -205,27 +205,16 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
 
   useEffect(() => {
     if (!isLoading) {
-      console.log("Header useEffect check:", { isLoading, userData, nextAuthData: data });
-      if (!userData) {
-        if (data) {
-          console.log("Triggering socialAuth with:", data.user);
-          socialAuth({
-            email: data?.user?.email,
-            name: data?.user?.name,
-            avatar: data?.user?.image,
-          });
-        } else {
-             console.log("No NextAuth session data found");
-        }
+      if (!userData && data) {
+        socialAuth({
+          email: data?.user?.email,
+          name: data?.user?.name,
+          avatar: data?.user?.image,
+        });
       }
-      if (data === null) {
-        if (isSuccess) {
+      if (data === null && isSuccess) {
           toast.success("Login successfully");
-        }
       }
-      // if (data === null && !isLoading && userData) {
-      //   setLogout(true);
-      // }
     }
   }, [data, userData, isLoading]);
 
