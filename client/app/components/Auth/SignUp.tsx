@@ -94,13 +94,7 @@ const SignUp: FC<Props> = ({ setRoute, setOpen, refetch }) => {
                     console.log("🚀 [DEBUG] Redirecting to:", redirectPath);
                     router.push(redirectPath);
 
-                    // Fallback
-                    setTimeout(() => {
-                        if (window.location.pathname !== redirectPath) {
-                            window.location.href = redirectPath;
-                        }
-                    }, 1000);
-
+                    setOpen(false);
                     if (typeof refetch === "function") {
                         refetch();
                     }

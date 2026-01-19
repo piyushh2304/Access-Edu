@@ -12,6 +12,7 @@ export const apiSlice = createApi({
             }
             return headers;
         },
+        credentials: "include",
     }),
     endpoints: (builder) => ({
         refreshToken: builder.query({

@@ -72,17 +72,10 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
         const redirectPath = res.user.role === "admin" ? "/admin" : "/profile";
         console.log("🚀 [DEBUG] Redirecting to:", redirectPath);
         
-        // Attempt Next.js router redirection
         router.push(redirectPath);
         
-        // Fallback redirection after 1 second if still on the same page
-        setTimeout(() => {
-          if (window.location.pathname !== redirectPath) {
-            console.log("⚠️ [DEBUG] Router redirection failed or slow, using window.location");
-            window.location.href = redirectPath;
-          }
-        }, 1000);
-        
+        // Ensure the state is updated and the modal is closed
+        setOpen(false);
         if (typeof refetch === "function") {
           refetch();
         }

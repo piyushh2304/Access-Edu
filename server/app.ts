@@ -23,28 +23,15 @@ app.use(
   cors({
     origin: (origin, callback) => {
       const originEnv = process.env.ORIGIN;
-      let allowedOrigins: string[] = [];
-
-      if (originEnv) {
-        try {
-          // Try parsing as JSON array
-          const parsed = JSON.parse(originEnv);
-          allowedOrigins = Array.isArray(parsed) ? parsed : [parsed];
-        } catch (e) {
-          // If not JSON, treat as a comma-separated string or single string
-          allowedOrigins = originEnv.split(",").map((o) => o.trim());
-        }
+      if (!origin || !originEnv) {
+        return callback(null, true);
       }
 
-      // Allow requests with no origin (like mobile apps or curl requests)
-      if (!origin) return callback(null, true);
-
-      // Check if the origin is allowed
-      if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV !== "production") {
-        return callback(null, true);
+      const allowedOrigins = originEnv.split(",").map((o) => o.trim());
+      if (allowedOrigins.includes(origin) || process.env.NODE_ENV !== "production") {
+        callback(null, true);
       } else {
-        const msg = "The CORS policy for this site does not allow access from the specified Origin.";
-        return callback(new Error(msg), false);
+        callback(new Error("Not allowed by CORS"));
       }
     },
     credentials: true,
