@@ -43,6 +43,9 @@ export const sendToken = (user: IUser, statusCode: number, res: Response) => {
     // only set secure to true in production
     if (process.env.NODE_ENV === 'production') {
         accessTokenOptions.secure = true;
+        refreshTokenOptions.secure = true;
+        accessTokenOptions.sameSite = 'none';
+        refreshTokenOptions.sameSite = 'none';
     }
 
     // Check user role to determine cookie names
