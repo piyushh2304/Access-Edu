@@ -65,16 +65,23 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
     onSubmit: async ({ email, password }) => {
       try {
         const res = await login({ email, password }).unwrap();
-        console.log("✅ [DEBUG] Login successful:", res);
+        console.log("✅ [DEBUG] Login response received:", res);
         toast.success("Login successfully");
         setOpen(false);
         
-        // Use response data directly for immediate redirection
-        if (res.user.role === "admin") {
-          router.push("/admin");
-        } else {
-          router.push("/profile");
-        }
+        const redirectPath = res.user.role === "admin" ? "/admin" : "/profile";
+        console.log("🚀 [DEBUG] Redirecting to:", redirectPath);
+        
+        // Attempt Next.js router redirection
+        router.push(redirectPath);
+        
+        // Fallback redirection after 1 second if still on the same page
+        setTimeout(() => {
+          if (window.location.pathname !== redirectPath) {
+            console.log("⚠️ [DEBUG] Router redirection failed or slow, using window.location");
+            window.location.href = redirectPath;
+          }
+        }, 1000);
         
         if (typeof refetch === "function") {
           refetch();

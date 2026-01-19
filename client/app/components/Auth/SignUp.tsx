@@ -16,6 +16,7 @@ import useSpeechOnHover from "../../hooks/useSpeechOnHover"
 type Props = {
     setRoute: (route: string) => void;
     setOpen: (open: boolean) => void;
+    refetch?: any;
 }
 
 const schema = Yup.object().shape({
@@ -25,7 +26,7 @@ const schema = Yup.object().shape({
     role: Yup.string().oneOf(["user", "admin"], "Role must be either user or admin").required("Please select a role")
 })
 
-const SignUp: FC<Props> = ({ setRoute, setOpen }) => {
+const SignUp: FC<Props> = ({ setRoute, setOpen, refetch }) => {
     const [show, setShow] = useState(false)
     const [register, { isLoading: isRegisterLoading, error }] = useRegisterMutation()
     const [activation, { isLoading: isActivationLoading }] = useActivationMutation()
@@ -77,10 +78,20 @@ const SignUp: FC<Props> = ({ setRoute, setOpen }) => {
                     await login({ email, password }).unwrap()
                     toast.success("Account created and logged in")
                     setOpen(false);
-                    if (role === 'admin') {
-                        router.push('/admin')
-                    } else {
-                        router.push('/profile')
+                    
+                    const redirectPath = role === 'admin' ? '/admin' : '/profile';
+                    console.log("🚀 [DEBUG] Redirecting to:", redirectPath);
+                    router.push(redirectPath);
+
+                    // Fallback
+                    setTimeout(() => {
+                        if (window.location.pathname !== redirectPath) {
+                            window.location.href = redirectPath;
+                        }
+                    }, 1000);
+
+                    if (typeof refetch === "function") {
+                        refetch();
                     }
                 } else {
                     // Fallback to verification flow when activationCode isn't available
