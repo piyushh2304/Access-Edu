@@ -45,8 +45,8 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
   const togglePasswordVisibilityRef = useSpeechOnHover<HTMLDivElement>(show ? 'Hide password' : 'Show password');
   const loginButtonRef = useSpeechOnHover<HTMLInputElement>('Login button');
   const orJoinWithRef = useSpeechOnHover<HTMLHeadingElement>('Or join with');
-  const googleSignInRef = useSpeechOnHover<SVGSVGElement>('Sign in with Google');
-  const githubSignInRef = useSpeechOnHover<SVGSVGElement>('Sign in with GitHub');
+  const googleSignInRef = useSpeechOnHover<HTMLDivElement>('Sign in with Google');
+  const githubSignInRef = useSpeechOnHover<HTMLDivElement>('Sign in with GitHub');
   const notHaveAccountRef = useSpeechOnHover<HTMLHeadingElement>('Not have any account?');
   const signUpLinkRef = useSpeechOnHover<HTMLSpanElement>('Sign up link');
 
@@ -166,20 +166,22 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
           Or join with
         </h5>
         <div className="flex items-center justify-center my-3">
-          <FcGoogle
+          <div 
             ref={googleSignInRef}
             tabIndex={0}
-            size={30}
-            className="cursor-ponter mr-2"
+            className="cursor-pointer mr-2"
             onClick={() => signIn("google")}
-          />
-          <AiFillGithub
+          >
+            <FcGoogle size={30} />
+          </div>
+          <div 
             ref={githubSignInRef}
             tabIndex={0}
-            size={30}
-            className="cursor-ponter ml-2"
+            className="cursor-pointer ml-2"
             onClick={() => signIn("github")}
-          />
+          >
+            <AiFillGithub size={30} />
+          </div>
         </div>
         <h5 ref={notHaveAccountRef} tabIndex={0} className="text-center pt-4 font-Poppins text-[14px]">
           Not have any account?

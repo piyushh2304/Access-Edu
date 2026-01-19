@@ -47,8 +47,8 @@ const SignUp: FC<Props> = ({ setRoute, setOpen, refetch }) => {
     const roleSelectRef = useSpeechOnHover<HTMLSelectElement>('Role selection dropdown');
     const signUpButtonRef = useSpeechOnHover<HTMLInputElement>('Sign Up button');
     const orJoinWithRef = useSpeechOnHover<HTMLHeadingElement>('Or join with');
-    const googleSignInRef = useSpeechOnHover<SVGSVGElement>('Sign in with Google');
-    const githubSignInRef = useSpeechOnHover<SVGSVGElement>('Sign in with GitHub');
+    const googleSignInRef = useSpeechOnHover<HTMLDivElement>('Sign in with Google');
+    const githubSignInRef = useSpeechOnHover<HTMLDivElement>('Sign in with GitHub');
     const alreadyHaveAccountRef = useSpeechOnHover<HTMLHeadingElement>('Already have an account?');
     const signInLinkRef = useSpeechOnHover<HTMLSpanElement>('Sign in link');
 
@@ -67,7 +67,18 @@ const SignUp: FC<Props> = ({ setRoute, setOpen, refetch }) => {
         , onSubmit: async ({ name, email, password, role }) => {
             console.log("🚀 [DEBUG] SignUp onSubmit started", { name, email, role });
             try {
+                // Add a warning if it takes too long (likely SMTP issue)
+                const smtpTimeout = setTimeout(() => {
+                    if (isRegisterLoading) {
+                        toast("This is taking a while. Please ensure your backend SMTP settings are correct.", {
+                            icon: '📧',
+                            duration: 6000
+                        });
+                    }
+                }, 15000);
+
                 const res = await register({ name, email, password, role }).unwrap()
+                clearTimeout(smtpTimeout);
                 console.log("✅ [DEBUG] SignUp register response:", res);
                 const token = res?.activationToken
                 const code = res?.activationCode
@@ -249,23 +260,23 @@ const SignUp: FC<Props> = ({ setRoute, setOpen, refetch }) => {
                 >
                     Or join with
                 </h5>
-                <div
-                    className='flex items-center justify-center my-3'
-                >
-                    <FcGoogle
+                <div className='flex items-center justify-center my-3'>
+                    <div 
                         ref={googleSignInRef}
                         tabIndex={0}
-                        size={30}
-                        className='cursor-ponter mr-2'
+                        className='cursor-pointer mr-2'
                         onClick={() => signIn("google")}
-                    />
-                    <AiFillGithub
+                    >
+                        <FcGoogle size={30} />
+                    </div>
+                    <div 
                         ref={githubSignInRef}
                         tabIndex={0}
-                        size={30}
-                        className='cursor-ponter ml-2'
+                        className='cursor-pointer ml-2'
                         onClick={() => signIn("github")}
-                    />
+                    >
+                        <AiFillGithub size={30} />
+                    </div>
                 </div>
                 <h5
                     ref={alreadyHaveAccountRef}
