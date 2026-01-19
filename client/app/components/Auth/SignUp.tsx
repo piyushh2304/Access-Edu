@@ -14,7 +14,8 @@ import useSpeechOnHover from "../../hooks/useSpeechOnHover"
 // import { useVoiceAuth } from "../../hooks/useVoiceAuth"
 
 type Props = {
-    setRoute: (route: string) => void
+    setRoute: (route: string) => void;
+    setOpen: (open: boolean) => void;
 }
 
 const schema = Yup.object().shape({
@@ -24,7 +25,7 @@ const schema = Yup.object().shape({
     role: Yup.string().oneOf(["user", "admin"], "Role must be either user or admin").required("Please select a role")
 })
 
-const SignUp: FC<Props> = ({ setRoute }) => {
+const SignUp: FC<Props> = ({ setRoute, setOpen }) => {
     const [show, setShow] = useState(false)
     const [register, { error }] = useRegisterMutation()
     const [activation] = useActivationMutation()
@@ -75,6 +76,7 @@ const SignUp: FC<Props> = ({ setRoute }) => {
                     await activation({ activation_token: token, activation_code: code }).unwrap()
                     await login({ email, password }).unwrap()
                     toast.success("Account created and logged in")
+                    setOpen(false);
                     if (role === 'admin') {
                         router.push('/admin')
                     } else {
@@ -87,7 +89,8 @@ const SignUp: FC<Props> = ({ setRoute }) => {
                     setRoute('Verification')
                 }
             } catch (e: any) {
-                const msg = e?.data?.message || 'Registration failed'
+                console.error("❌ [DEBUG] SignUp error:", e);
+                const msg = e?.data?.message || e?.message || 'Registration failed'
                 toast.error(msg)
             }
         }
