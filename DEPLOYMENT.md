@@ -88,9 +88,33 @@ The client will normally run on port 3000.
 
 ## Deployment Platforms
 
-### Server
-- **VPS (Ubuntu/DigitalOcean)**: Use PM2 to keep the server running (`pm2 start build/server.js`).
-- **Render/Railway**: Connect repository, set build command to `npm install && npm run build`, start command to `npm start`.
+### 1. Backend (Render)
+1. **New Web Service**: Connect your GitHub repository.
+2. **Root Directory**: `server`
+3. **Environment**: `Node`
+4. **Build Command**: `npm install && npm run build`
+5. **Start Command**: `npm start`
+6. **Environment Variables**:
+   - `NODE_ENV`: `production`
+   - `ORIGIN`: `["https://your-app-name.vercel.app"]` (Replace with your actual Vercel URL)
+   - `PORT`: `8000`
+   - `MONGO_URI`: (Your MongoDB Connection String)
+   - `REDIS_URL`: (Your Upstash Redis URL)
+   - `CLOUD_NAME`, `CLOUD_API_KEY`, `CLOUD_API_SECRET`: (Cloudinary Credentials)
+   - `JWT_SECRET`, `ACCESS_TOKEN`, `REFRESH_TOKEN`: (Random strings for security)
 
-### Client
-- **Vercel**: Connect repository. It usually auto-detects Next.js. Add environment variables in Vercel dashboard.
+### 2. Frontend (Vercel)
+1. **New Project**: Connect your GitHub repository.
+2. **Framework Preset**: `Next.js`
+3. **Root Directory**: `client`
+4. **Environment Variables**:
+   - `NEXT_PUBLIC_SERVER_URI`: `https://your-render-name.onrender.com/api/v1/`
+   - `NEXT_PUBLIC_SOCKET_SERVER_URI`: `https://your-render-name.onrender.com/`
+   - `NEXTAUTH_URL`: `https://your-app-name.vercel.app`
+   - `SECRET`: (Random long string for NextAuth)
+   - `GOOGLE_CLIENT_ID`, `GITHUB_CLIENT_ID`, etc. (If using Social Auth)
+
+## Avoiding CORS Errors
+- Ensure the `ORIGIN` in the backend exactly matches your Vercel URL (without a trailing slash).
+- Ensure the `NEXT_PUBLIC_SERVER_URI` in the frontend exactly matches your Render URL (must end with `/api/v1/` as per the current codebase).
+- If you change the Vercel domain later, remember to update the `ORIGIN` in Render environment variables.

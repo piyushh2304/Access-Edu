@@ -62,6 +62,7 @@ export const useVoiceNavigation = ({
   const recognitionRef = useRef<SpeechRecognition | null>(null);
   const [isListening, setIsListening] = useState(false);
   const restartTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const permissionDeniedRef = useRef(false);
   const isStartingRef = useRef(false);
   const lastPathnameRef = useRef<string | null>(null);
   const lastCommandTimeRef = useRef<number>(0);

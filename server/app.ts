@@ -22,9 +22,23 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: (origin, callback) => {
-      const allowedOrigins = process.env.ORIGIN ? JSON.parse(process.env.ORIGIN) : [];
+      const originEnv = process.env.ORIGIN;
+      let allowedOrigins: string[] = [];
+
+      if (originEnv) {
+        try {
+          // Try parsing as JSON array
+          const parsed = JSON.parse(originEnv);
+          allowedOrigins = Array.isArray(parsed) ? parsed : [parsed];
+        } catch (e) {
+          // If not JSON, treat as a comma-separated string or single string
+          allowedOrigins = originEnv.split(",").map((o) => o.trim());
+        }
+      }
+
       // Allow requests with no origin (like mobile apps or curl requests)
       if (!origin) return callback(null, true);
+
       // Check if the origin is allowed
       if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV !== "production") {
         return callback(null, true);
