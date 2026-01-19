@@ -27,9 +27,9 @@ const schema = Yup.object().shape({
 
 const SignUp: FC<Props> = ({ setRoute, setOpen }) => {
     const [show, setShow] = useState(false)
-    const [register, { error }] = useRegisterMutation()
-    const [activation] = useActivationMutation()
-    const [login] = useLoginMutation()
+    const [register, { isLoading: isRegisterLoading, error }] = useRegisterMutation()
+    const [activation, { isLoading: isActivationLoading }] = useActivationMutation()
+    const [login, { isLoading: isLoginLoading }] = useLoginMutation()
     const router = useRouter()
     
 
@@ -222,7 +222,13 @@ const SignUp: FC<Props> = ({ setRoute, setOpen }) => {
                     )}
                 </div>
                 <div className="w-full mt-5">
-                    <input ref={signUpButtonRef} type="submit" value="Sign Up" className={`${styles.button}`} />
+                    <input 
+                        ref={signUpButtonRef} 
+                        type="submit" 
+                        value={isRegisterLoading || isActivationLoading || isLoginLoading ? "Processing..." : "Sign Up"} 
+                        disabled={isRegisterLoading || isActivationLoading || isLoginLoading}
+                        className={`${styles.button} ${(isRegisterLoading || isActivationLoading || isLoginLoading) ? "opacity-50 cursor-not-allowed" : ""}`} 
+                    />
                 </div>
                 <br />
                 <h5

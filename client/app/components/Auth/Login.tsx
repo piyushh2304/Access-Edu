@@ -31,8 +31,8 @@ const schema = Yup.object().shape({
 
 const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
   const [show, setShow] = useState(false);
-  const [login, { isSuccess, error }] = useLoginMutation();
-  const { user } = useSelector((state: any) => state.auth);
+  const [login, { isLoading, isSuccess, error }] = useLoginMutation();
+  const { user: authUser } = useSelector((state: any) => state.auth);
   const router = useRouter();
 
 
@@ -51,32 +51,38 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
   const signUpLinkRef = useSpeechOnHover<HTMLSpanElement>('Sign up link');
 
   useEffect(() => {
-    if (isSuccess && user) {
-      if (user.role === "admin") {
-        toast.success("Welcome Admin");
-        router.push("/admin");
-      } else {
-        toast.success("Welcome User");
-        router.push("/");
-      }
-      setOpen(false);
-      if (typeof refetch === "function") {
-        refetch();
-      }
-    }
     if (error) {
       if ("data" in error) {
         const errorData = error as any;
         toast.error(errorData.data.message);
       }
     }
-  }, [isSuccess, error, setOpen, refetch, user, router]);
+  }, [error]);
 
   const formik = useFormik({
     initialValues: { email: "", password: "" },
     validationSchema: schema,
     onSubmit: async ({ email, password }) => {
-      await login({ email, password });
+      try {
+        const res = await login({ email, password }).unwrap();
+        console.log("✅ [DEBUG] Login successful:", res);
+        toast.success("Login successfully");
+        setOpen(false);
+        
+        // Use response data directly for immediate redirection
+        if (res.user.role === "admin") {
+          router.push("/admin");
+        } else {
+          router.push("/profile");
+        }
+        
+        if (typeof refetch === "function") {
+          refetch();
+        }
+      } catch (err: any) {
+        const msg = err.data?.message || err.message || "Login failed";
+        toast.error(msg);
+      }
     },
   });
 
@@ -140,7 +146,13 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
           <span className="text-red-500 pt-3 block">{errors.password}</span>
         )}
         <div className="w-full mt-5">
-          <input ref={loginButtonRef} type="submit" value="Login" className={`${styles.button}`} />
+          <input 
+            ref={loginButtonRef} 
+            type="submit" 
+            value={isLoading ? "Logging in..." : "Login"} 
+            disabled={isLoading}
+            className={`${styles.button} ${isLoading ? "opacity-50 cursor-not-allowed" : ""}`} 
+          />
         </div>
         <br />
         <h5 ref={orJoinWithRef} tabIndex={0} className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
