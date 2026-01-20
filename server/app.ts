@@ -31,6 +31,7 @@ app.use(
       if (allowedOrigins.includes(origin) || process.env.NODE_ENV !== "production") {
         callback(null, true);
       } else {
+        console.error(`[CORS Blocked] Origin: '${origin}', Allowed: ${JSON.stringify(allowedOrigins)}`);
         callback(new Error("Not allowed by CORS"));
       }
     },
