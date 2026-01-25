@@ -19,7 +19,11 @@ export default function Protected({ children }: ProtectedProps) {
   }
 
   if (isError || !data?.user) {
-    console.log("🚫 [DEBUG] Protected: Access denied, redirecting to home");
+    console.log("🚫 [DEBUG] Protected: Access denied, redirecting to home. Error details:", { 
+      isError, 
+      user: data?.user,
+      error_object: JSON.stringify(data || "No data") 
+    });
     return redirect("/");
   }
 
