@@ -4,22 +4,7 @@ import http from "http";
 export const initSocketServer = (server: http.Server) => {
   const io = new SocketIOServer(server, {
     cors: {
-      origin: (origin, callback) => {
-        const originEnv = process.env.ORIGIN;
-        if (!origin || !originEnv) {
-          return callback(null, true);
-        }
-
-        const allowedOrigins = originEnv.split(",").map((o) => o.trim());
-        // For socket.io, we need to return the specific matched origin, not just true, 
-        // effectively handled by Set(allowedOrigins).has(origin)
-        if (allowedOrigins.includes(origin) || process.env.NODE_ENV !== "production") {
-          callback(null, origin);
-        } else {
-          console.error(`[Socket CORS Blocked] Origin: '${origin}'`);
-          callback(new Error("Not allowed by CORS"));
-        }
-      },
+      origin: "*",
       methods: ["GET", "POST"],
       credentials: true,
     },
