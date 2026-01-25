@@ -14,6 +14,7 @@ export const apiSlice = createApi({
         },
         credentials: "include",
     }),
+    tagTypes: ["User"],
     endpoints: (builder) => ({
         refreshToken: builder.query({
             query: (data) => ({
@@ -27,20 +28,21 @@ export const apiSlice = createApi({
                 url: "me"
                 , method: "GET"
                 , credentials: "include" as const
-            })
+            }),
+            providesTags: ["User"],
             , async onQueryStarted(arg, { queryFulfilled, dispatch }) {
-                try {
-                    const result = await queryFulfilled;
-                    dispatch(
-                        userLoggedIn({
-                            accessToken: result.data.accessToken,
-                            user: result.data.user
-                        })
+            try {
+                const result = await queryFulfilled;
+                dispatch(
+                    userLoggedIn({
+                        accessToken: result.data.accessToken,
+                        user: result.data.user
+                    })
                     )
-                } catch (error: any) {
-                    console.log(error)
-                }
-            }
+    } catch(error: any) {
+        console.log(error)
+    }
+}
         })
     })
 })

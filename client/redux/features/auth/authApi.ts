@@ -24,6 +24,7 @@ export const authApi = apiSlice.injectEndpoints({
                 body: data,
                 credentials: "include" as const
             }),
+            invalidatesTags: ["User"],
             async onQueryStarted(arg, { queryFulfilled, dispatch }) {
                 try {
                     const result = await queryFulfilled;
@@ -57,6 +58,7 @@ export const authApi = apiSlice.injectEndpoints({
                 },
                 credentials: "include" as const
             }),
+            invalidatesTags: ["User"],
             async onQueryStarted(arg, { queryFulfilled, dispatch }) {
                 try {
                     const result = await queryFulfilled;
@@ -82,6 +84,7 @@ export const authApi = apiSlice.injectEndpoints({
                 },
                 credentials: "include" as const
             }),
+            invalidatesTags: ["User"],
             async onQueryStarted(arg, { queryFulfilled, dispatch }) {
                 try {
                     const result = await queryFulfilled;
