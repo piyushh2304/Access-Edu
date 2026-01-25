@@ -44,19 +44,19 @@ export const registrationUser = CatchAsyncError(async (req: Request, res: Respon
         const html = await ejs.renderFile(path.join(__dirname, "../mails/activation-mail.ejs"), data)
 
         try {
-            await sendMail({
-                email: user.email,
-                subject: "Activate your account",
-                template: "activation-mail.ejs",
-                data,
-            })
+            // await sendMail({
+            //     email: user.email,
+            //     subject: "Activate your account",
+            //     template: "activation-mail.ejs",
+            //     data,
+            // })
 
             res.status(201).json({
                 success: true,
-                message: `Please check your email: ${user.email} to activate your account!`,
+                message: `Registration successful! Auto-verifying...`,
                 activationToken: activationToken.token,
-                // Expose activationCode only in non-production environments for dev convenience
-                activationCode: process.env.NODE_ENV !== 'production' ? activationCode : undefined,
+                // Expose activationCode in all environments for auto-verification since email is disabled
+                activationCode: activationCode,
             })
         } catch (error: any) {
             return next(new ErrorHandler(error.message, 400))
