@@ -8,7 +8,7 @@ interface ProtectedProps {
 }
 
 export default function Protected({ children }: ProtectedProps) {
-  const { data, isLoading, isError } = useLoadUserQuery(undefined, {
+  const { data, isLoading, isError, error } = useLoadUserQuery(undefined, {
     refetchOnMountOrArgChange: true,
   });
 
@@ -22,7 +22,7 @@ export default function Protected({ children }: ProtectedProps) {
     console.log("🚫 [DEBUG] Protected: Access denied, redirecting to home. Error details:", { 
       isError, 
       user: data?.user,
-      error_object: JSON.stringify(isError), // Log the error object directly if possible, or inspection
+      error_object: error, // Log the actual error object
       data_dump: data
     });
     return redirect("/");

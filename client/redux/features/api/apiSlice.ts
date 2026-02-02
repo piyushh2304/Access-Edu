@@ -31,7 +31,7 @@ export const apiSlice = createApi({
             query: (data) => ({
                 url: "me"
                 , method: "GET"
-                , credentials: "include" as const
+                // , credentials: "include" as const // Commenting out to force Header usage and avoid potential CORS/Conflict
             }),
             providesTags: ["User"],
             async onQueryStarted(arg, { queryFulfilled, dispatch }) {
