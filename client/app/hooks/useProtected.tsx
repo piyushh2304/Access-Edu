@@ -18,6 +18,7 @@ export default function Protected({ children }: ProtectedProps) {
     return <Loader />;
   }
 
+  if (isError || !data?.user) {
     console.log("🚫 [DEBUG] Protected: Access denied, redirecting to home. Error details:", { 
       isError, 
       user: data?.user,
@@ -25,7 +26,6 @@ export default function Protected({ children }: ProtectedProps) {
       data_dump: data
     });
     // return redirect("/"); // Bypassing redirect as per user request
-    return <>{children}</>;
   }
 
   return <>{children}</>;
