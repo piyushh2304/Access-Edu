@@ -11,7 +11,8 @@ import { styles } from "../../../app/styles/styles";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
 import toast from "react-hot-toast";
 import { signIn } from "next-auth/react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { userLoggedIn } from "@/redux/features/auth/authSlice";
 import { useRouter } from "next/navigation";
 import useSpeechOnHover from "../../hooks/useSpeechOnHover";
 // import { useSpeech } from "../../SpeechProvider";
@@ -33,6 +34,7 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
   const [show, setShow] = useState(false);
   const [login, { isLoading, isSuccess, error }] = useLoginMutation();
   const { user: authUser } = useSelector((state: any) => state.auth);
+  const dispatch = useDispatch();
   const router = useRouter();
 
 
@@ -66,6 +68,17 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
       try {
         const res = await login({ email, password }).unwrap();
         console.log("✅ [DEBUG] Login response received:", res);
+
+        console.log("✅ [DEBUG] Login response received:", res);
+        console.log("🔍 [DEBUG] Dispatching userLoggedIn with token:", res.accessToken);
+
+        dispatch(
+           userLoggedIn({
+              accessToken: res.accessToken,
+              user: res.user
+           })
+        );
+
         toast.success("Login successfully");
         setOpen(false);
         

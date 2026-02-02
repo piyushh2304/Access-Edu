@@ -7,8 +7,12 @@ export const apiSlice = createApi({
         baseUrl: process.env.NEXT_PUBLIC_SERVER_URI,
         prepareHeaders: (headers, { getState }) => {
             const token = (getState() as any).auth.token;
+            console.log("🔍 [DEBUG] apiSlice prepareHeaders - Token in state:", token ? "Present" : "Missing", token);
             if (token) {
                 headers.set("authorization", `Bearer ${token}`);
+                console.log("✅ [DEBUG] apiSlice - Authorization header set");
+            } else {
+                console.warn("⚠️ [DEBUG] apiSlice - No token found in state, Authorization header NOT set");
             }
             return headers;
         },
@@ -30,19 +34,19 @@ export const apiSlice = createApi({
                 , credentials: "include" as const
             }),
             providesTags: ["User"],
-            , async onQueryStarted(arg, { queryFulfilled, dispatch }) {
-            try {
-                const result = await queryFulfilled;
-                dispatch(
-                    userLoggedIn({
-                        accessToken: result.data.accessToken,
-                        user: result.data.user
-                    })
+            async onQueryStarted(arg, { queryFulfilled, dispatch }) {
+                try {
+                    const result = await queryFulfilled;
+                    dispatch(
+                        userLoggedIn({
+                            accessToken: result.data.accessToken,
+                            user: result.data.user
+                        })
                     )
-    } catch(error: any) {
-        console.log(error)
-    }
-}
+                } catch (error: any) {
+                    console.log(error)
+                }
+            }
         })
     })
 })
