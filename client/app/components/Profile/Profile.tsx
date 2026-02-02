@@ -1,5 +1,6 @@
 "use client";
 import React, { FC, useEffect, useState, useMemo, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import SideBarProfile from "./SideBarProfile";
 import { useLogoutQuery } from "@/redux/features/auth/authApi";
@@ -49,6 +50,7 @@ const Profile: FC<Props> = ({ user }) => {
   const [avatar, setAvatar] = useState(user?.avatar?.url || null);
   const [logout, setLogout] = useState(false);
   const [active, setActive] = useState(1);
+  const router = useRouter();
   const { data, isLoading: coursesLoading } = useGetUsersAllCoursesQuery(undefined, {
     skip: active !== 3,
   });
@@ -62,6 +64,12 @@ const Profile: FC<Props> = ({ user }) => {
   useLogoutQuery(undefined, {
     skip: !logout,
   });
+
+  const logoutHandler = useCallback(async () => {
+    setLogout(true);
+    await signOut({ redirect: false });
+    router.push("/");
+  }, [router]);
 
   // Memoize course filtering for better performance (O(n) instead of O(n*m))
   const courses = useMemo(() => {
@@ -100,10 +108,7 @@ const Profile: FC<Props> = ({ user }) => {
     setRefreshUser(true);
   }, []);
 
-  const logoutHandler = useCallback(async () => {
-    setLogout(true);
-    await signOut();
-  }, []);
+  /* logoutHandler moved up to use router */
   
   // Initialize profile voice commands (after logoutHandler is defined)
   useProfileVoiceCommands({
