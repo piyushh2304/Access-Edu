@@ -29,9 +29,9 @@ export const apiSlice = createApi({
         }),
         loadUser: builder.query({
             query: (data) => ({
-                url: "me"
-                , method: "GET"
-                // , credentials: "include" as const // Commenting out to force Header usage and avoid potential CORS/Conflict
+                url: "me",
+                method: "GET",
+                credentials: "include" as const
             }),
             providesTags: ["User"],
             async onQueryStarted(arg, { queryFulfilled, dispatch }) {
@@ -44,7 +44,7 @@ export const apiSlice = createApi({
                         })
                     )
                 } catch (error: any) {
-                    console.log(error)
+                    // console.log(error) 
                 }
             }
         })

@@ -49,7 +49,8 @@ const Page = (props: Props) => {
 
     if (searchInput) {
       filteredCourses = filteredCourses.filter((item: any) =>
-        item.name.toLowerCase().includes(searchInput.toLowerCase())
+        item.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+        item.categories.toLowerCase().includes(searchInput.toLowerCase())
       );
     }
 

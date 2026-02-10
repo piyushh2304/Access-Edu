@@ -7,8 +7,16 @@ const nextConfig = {
         hostname: 'res.cloudinary.com',
       },
       {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+      {
         protocol: 'https',
         hostname: 'randomuser.me',
+      },
+      {
+        protocol: 'https',
+        hostname: 'access-edu-1.onrender.com',
       },
     ],
   },

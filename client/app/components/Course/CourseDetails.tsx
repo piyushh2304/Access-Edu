@@ -4,13 +4,8 @@ import Ratings from "@/app/utils/Ratings";
 import Link from "next/link";
 import { format } from "timeago.js";
 import React, { useEffect, useState, FC } from "react";
-import {
-  IoMdCheckmarkCircleOutline,
-  IoMdCloseCircleOutline,
-} from "react-icons/io";
-import { useSelector } from "react-redux";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io"; // Removed IoMdCloseCircleOutline since modal is gone
 import ContentCourseList from "./ContentCourseList";
-import { useLoadUserQuery } from "@/redux/features/api/apiSlice";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
 import { useEnrollInCourseMutation } from "@/redux/features/courses/coursesApi";
@@ -19,6 +14,7 @@ import { VscVerifiedFilled } from "react-icons/vsc";
 import defaultImage from "@/public/assets/avatar.jpg";
 import useAuth from "@/app/hooks/useAuth";
 import { useSpeechOnHover } from "../../hooks/useSpeechOnHover";
+// Removed Stripe imports and CheckOutForm
 
 type Props = {
   data: any;
@@ -31,7 +27,6 @@ const CourseDetails = ({
   setRoute,
   setOpen: openAuthModal,
 }: Props) => {
-  const [open, setOpen] = useState(false);
   const { data: userData, refetch } = useAuth(); // Get refetch from useAuth
   const router = useRouter();
 
@@ -64,7 +59,7 @@ const CourseDetails = ({
   const sourceDoc4Ref = useSpeechOnHover<HTMLParagraphElement>('Source document included');
 
   const isPurchased =
-    userData?.user && userData?.user?.courses?.find((item: any) => item._id === data._id); // Use userData.user directly
+    userData?.user && userData?.user?.courses?.find((item: any) => (item._id || item.courseId) === data._id); // Use userData.user directly
 
   const [enrollInCourse, { data: enrollData, error }] =
     useEnrollInCourseMutation();
@@ -249,7 +244,6 @@ const CourseDetails = ({
         </div>
       </div>
       <>
-        
       </>
     </div>
   );

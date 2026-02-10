@@ -7,7 +7,7 @@ export default function useAuth() {
   const { data, isLoading, isSuccess, isError, refetch } = useLoadUserQuery(
     undefined,
     {
-      skip: !token,
+      refetchOnReconnect: true,
     }
   );
 

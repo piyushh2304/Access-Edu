@@ -14,9 +14,9 @@ const CategoryButton: React.FC<CategoryButtonProps> = ({ item, category, setCate
       <button
         ref={categoryButtonRef}
         className={`h-[35px] ${
-          category === item._id ? "bg-[crimson]" : "bg-[#5050cb]"
+          category === item.title ? "bg-[crimson]" : "bg-[#5050cb]"
         } m-3 px-3 rounded-[30px] flex items-center justify-center font-Poppins cursor-pointer`}
-        onClick={() => setCategory(item._id)}
+        onClick={() => setCategory(item.title)}
         aria-label={`Filter courses by ${item.title} category`}
       >
         {item.title}
