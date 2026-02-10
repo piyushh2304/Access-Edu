@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import { useSpeech } from '../SpeechProvider';
 
 // Male voice name patterns
@@ -59,6 +60,7 @@ const getMaleVoice = (): SpeechSynthesisVoice | null => {
 
 const useSpeechOnHover = <T extends HTMLElement>(textToSpeak: string) => {
   const ref = useRef<T>(null);
+  const pathname = usePathname();
   const { isTTSActive } = useSpeech();
   // Use a ref to track isTTSActive to avoid closure issues
   const isTTSActiveRef = useRef(isTTSActive);
@@ -69,9 +71,9 @@ const useSpeechOnHover = <T extends HTMLElement>(textToSpeak: string) => {
   }, [isTTSActive]);
 
   useEffect(() => {
-    // Don't activate if TTS is not active
-    if (!isTTSActive) {
-      // If TTS is disabled, remove event listeners if they exist
+    // Don't activate if TTS is not active or if we're in the admin dashboard
+    if (!isTTSActive || pathname?.startsWith('/admin')) {
+      // If TTS is disabled or in admin, remove event listeners if they exist
       if (ref.current) {
         // Cleanup will be handled by the return function
       }

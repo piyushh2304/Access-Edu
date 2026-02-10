@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import React, { FC, useEffect, useState, useRef } from "react";
 import NavItems from "../utils/NavItems";
 import { ThemeSwitcher } from "../utils/ThemeSwitcher";
@@ -136,6 +136,7 @@ const MobileProfileImageLink: FC<{
 
 const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const [active, setActive] = useState(false);
   const [openSidebar, setOpenSidebar] = useState(false);
   const menuButtonRef = React.useRef<HTMLButtonElement>(null);
@@ -171,7 +172,11 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
     const cleanups: (() => void)[] = [];
 
     // Create getter function that reads from ref to always get current value
-    const getIsActive = () => isTTSActiveRef.current;
+    const getIsActive = () => isTTSActiveRef.current && !pathname?.startsWith('/admin');
+
+    if (pathname?.startsWith('/admin')) {
+        return;
+    }
 
     if (skipLinkRef.current) {
       const cleanup = attachSpeechEvents(skipLinkRef.current, 'Skip to main content', getIsActive);
