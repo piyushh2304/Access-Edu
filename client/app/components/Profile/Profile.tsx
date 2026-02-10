@@ -3,7 +3,7 @@ import React, { FC, useEffect, useState, useMemo, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import SideBarProfile from "./SideBarProfile";
-import { useLogoutQuery } from "@/redux/features/auth/authApi";
+import { useLogoutMutation } from "@/redux/features/auth/authApi";
 import { signOut } from "next-auth/react";
 import { useGetUsersAllCoursesQuery } from "@/redux/features/courses/courseApi";
 import { useLoadUserQuery } from "@/redux/features/api/apiSlice";
@@ -45,7 +45,6 @@ const EmptyCoursesMessage: FC = () => {
 const Profile: FC<Props> = ({ user }) => {
   const [scroll, setScroll] = useState(false);
   const [avatar, setAvatar] = useState(user?.avatar?.url || null);
-  const [logout, setLogout] = useState(false);
   const [active, setActive] = useState(1);
   const router = useRouter();
   const { data, isLoading: coursesLoading } = useGetUsersAllCoursesQuery(undefined, {
@@ -58,15 +57,13 @@ const Profile: FC<Props> = ({ user }) => {
   // Get voice control state from SpeechProvider
   const { isVoiceControlActive } = useSpeech();
 
-  useLogoutQuery(undefined, {
-    skip: !logout,
-  });
+  const [logoutCall] = useLogoutMutation();
 
   const logoutHandler = useCallback(async () => {
-    setLogout(true);
+    await logoutCall(undefined).unwrap();
     await signOut({ redirect: false });
-    router.push("/");
-  }, [router]);
+    window.location.href = "/";
+  }, [logoutCall]);
 
   // Memoize course filtering for better performance (O(n) instead of O(n*m))
   const courses = useMemo(() => {
@@ -105,17 +102,16 @@ const Profile: FC<Props> = ({ user }) => {
     setRefreshUser(true);
   }, []);
 
-  /* logoutHandler moved up to use router */
-  
-  // Initialize profile voice commands (after logoutHandler is defined)
+  const handleCommandRecognized = useCallback((command: string) => {
+    console.log('Profile command recognized:', command);
+  }, []);
+
   useProfileVoiceCommands({
     isActive: isVoiceControlActive,
     setActive,
     logoutHandler,
     userRole: currentUser?.role,
-    onCommandRecognized: (command) => {
-      console.log('Profile command recognized:', command);
-    },
+    onCommandRecognized: handleCommandRecognized,
   });
 
   // Optimize scroll handler with throttling

@@ -5,7 +5,7 @@ import { useSpeech } from '../SpeechProvider';
 
 interface ProfileVoiceCommandsProps {
   isActive: boolean;
-  setActive: (active: number) => void;
+  setActive: (active: any) => void;
   logoutHandler: () => void;
   userRole?: string;
   onCommandRecognized?: (command: string) => void;
@@ -15,9 +15,17 @@ interface ProfileVoiceCommandsProps {
 // Minimum confidence score required for speech recognition (0.0 to 1.0)
 // Higher values = more accurate but may reject valid commands
 // Lower values = more lenient but may accept incorrect transcriptions
-const MIN_CONFIDENCE_THRESHOLD = 0.5;
+const MIN_CONFIDENCE_THRESHOLD = 0.3;
 
 const PROFILE_COMMANDS = [
+  // Open Profile commands - navigate to profile page or switch to My Account section
+  // Navigation commands added to profile hook to handle them while global nav is paused
+  { keywords: ['open home', 'go home', 'go to home', 'home'], action: 'go-home' },
+  { keywords: ['open courses', 'go to courses', 'courses'], action: 'go-courses' },
+  { keywords: ['open about', 'go to about', 'about'], action: 'go-about' },
+  { keywords: ['open faq', 'go to faq', 'faq'], action: 'go-faq' },
+  { keywords: ['open policy', 'go to policy', 'policy'], action: 'go-policy' },
+
   // Open Profile commands - navigate to profile page or switch to My Account section
   { keywords: ['open profile', 'go to profile', 'show profile', 'profile', 'my profile', 'open my profile', 'go to my profile'], action: 'open-profile' },
 
@@ -56,7 +64,7 @@ export const useProfileVoiceCommands = ({
   onCommandRecognized,
 }: ProfileVoiceCommandsProps) => {
   const router = useRouter();
-  const recognitionRef = useRef<SpeechRecognition | null>(null);
+  const recognitionRef = useRef<any>(null);
   const restartTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const isStartingRef = useRef(false);
   const lastCommandTimeRef = useRef<number>(0);
@@ -86,7 +94,7 @@ export const useProfileVoiceCommands = ({
       return;
     }
 
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
     // Clean up previous recognition if exists
     if (recognitionRef.current) {
@@ -128,13 +136,13 @@ export const useProfileVoiceCommands = ({
       }
     };
 
-    recognitionRef.current.onresult = (event) => {
+    recognitionRef.current.onresult = (event: any) => {
       if (Date.now() - lastCommandTimeRef.current < PROCESSING_COOLDOWN) return;
 
       // Get the most recent result with confidence score
-      const results = Array.from(event.results);
-      const lastResult = results[results.length - 1];
-      const lastAlternative = lastResult[0];
+      const results = Array.from(event.results as any);
+      const lastResult = results[results.length - 1] as any;
+      const lastAlternative = lastResult[0] as any;
 
       // Check confidence score - only process if confidence meets threshold
       const confidence = lastAlternative?.confidence ?? 0;
@@ -203,6 +211,28 @@ export const useProfileVoiceCommands = ({
             router.push('/profile');
           }
         }, 'Open Profile');
+        return;
+      }
+
+      // Handle base navigation commands
+      if (transcript.includes('home')) {
+        executeCommand(() => { speak('Opening home'); router.push('/'); }, 'Go Home');
+        return;
+      }
+      if (transcript.includes('courses')) {
+        executeCommand(() => { speak('Opening courses'); router.push('/courses'); }, 'Go Courses');
+        return;
+      }
+      if (transcript.includes('about')) {
+        executeCommand(() => { speak('Opening about'); router.push('/about'); }, 'Go About');
+        return;
+      }
+      if (transcript.includes('faq')) {
+        executeCommand(() => { speak('Opening faq'); router.push('/faq'); }, 'Go FAQ');
+        return;
+      }
+      if (transcript.includes('policy')) {
+        executeCommand(() => { speak('Opening policy'); router.push('/policy'); }, 'Go Policy');
         return;
       }
 
@@ -281,7 +311,7 @@ export const useProfileVoiceCommands = ({
       isStartingRef.current = false;
     };
 
-    recognitionRef.current.onerror = (event) => {
+    recognitionRef.current.onerror = (event: any) => {
       isStartingRef.current = false;
 
       // Ignore "aborted" errors as they're normal when stopping

@@ -8,7 +8,7 @@ import {
   useGetCourseDetailsQuery,
 } from "@/redux/features/courses/courseApi";
 import Image from "next/image";
-import React, { useEffect, useState, useRef } from "react";
+import React, { FC, useEffect, useState, useRef } from "react";
 import toast from "react-hot-toast";
 import {
   AiFillStar,
@@ -133,18 +133,18 @@ const CourseContentMedia = ({
       socketId.emit("notification", {
         title: "New Question Received",
         message: `You have a new question from ${data[activeVideo].title}`,
-        userId: user._id,
+        userId: user?._id,
       });
     }
     if (answerSuccess) {
       setAnswer("");
       refetch();
       toast.success("Answer added successfully");
-      if (user.role !== "admin") {
+      if (user?.role !== "admin") {
         socketId.emit("notification", {
           title: "New Question Reply Received",
           message: `You have a new question reply in ${data[activeVideo].title}`,
-          userId: user._id,
+          userId: user?._id,
         });
       }
     }
@@ -156,7 +156,7 @@ const CourseContentMedia = ({
       socketId.emit("notification", {
         title: "New Review Received",
         message: `You have a new review from ${data[activeVideo].title}`,
-        userId: user._id,
+        userId: user?._id,
       });
     }
     if (replySuccess) {
@@ -493,7 +493,7 @@ const ReviewItem: FC<ReviewItemProps> = ({ item, user, setIsReviewReply, setRevi
   const addReplyButtonRef = useSpeechOnHover<HTMLSpanElement>('Add reply to review button');
   const replyInputRef = useSpeechOnHover<HTMLInputElement>('Reply to review input field');
   const submitReplyButtonRef = useSpeechOnHover<HTMLButtonElement>('Submit reply to review button');
-  const adminVerifiedRef = useSpeechOnHover<SVGSVGElement>('Admin verified');
+  const adminVerifiedRef = useSpeechOnHover<HTMLSpanElement>('Admin verified');
 
   return (
     <div
@@ -626,9 +626,9 @@ const CommentReply = ({
   );
 };
 
-const CommentItem: FC<CommentItemProps> = ({
+const CommentItem: FC<any> = ({
   data,
-  activeVide,
+  activeVideo,
   item,
   answer,
   setAnswer,
@@ -651,7 +651,7 @@ const CommentItem: FC<CommentItemProps> = ({
   const replyCountRef = useSpeechOnHover<HTMLSpanElement>(`${item.questionReplies.length} replies`);
   const answerInputRef = useSpeechOnHover<HTMLInputElement>('Answer input field');
   const submitAnswerButtonRef = useSpeechOnHover<HTMLButtonElement>('Submit answer button');
-  const adminVerifiedRef = useSpeechOnHover<SVGSVGElement>('Admin verified');
+  const adminVerifiedRef = useSpeechOnHover<HTMLSpanElement>('Admin verified');
 
   return (
     <div ref={questionItemRef} tabIndex={0} className="my-4">

@@ -54,8 +54,12 @@ export const SpeechProvider = ({ children }: { children: ReactNode }) => {
     // console.log("Voice listening status:", listening);
   }, []);
 
+  // Import usePathname to track current page
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
+
   const { isListening: isVoiceListening } = useVoiceNavigation({
-    isActive: isVoiceControlActive && !isVoiceAuthActive, // Disable navigation when auth is active (handoff)
+    // Pause global navigation on profile page to allow specialized profile voice commands to work without mic conflict
+    isActive: isVoiceControlActive && !isVoiceAuthActive && pathname !== '/profile', 
     onCommandRecognized: handleCommandRecognized,
     onListeningStatusChange: handleListeningStatusChange,
     speak, // Pass speak function directly to avoid circular dependency

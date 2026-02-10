@@ -104,7 +104,7 @@ const SideBarProfile: FC<Props> = ({ user, active, avatar, setActive, logoutHand
                 ttsLabel="Change Password menu item"
             />
             {
-                user.role !== "admin" && (
+                user && user.role !== "admin" && (
                     <div className="w-full flex items-center px-3 py-4 cursor-pointer  dark:bg-transparent bg-transparent"
                         onClick={() => setActive(3)}>
                         <SiCoursera size={20} className="dark:text-white text-black" />
@@ -115,7 +115,7 @@ const SideBarProfile: FC<Props> = ({ user, active, avatar, setActive, logoutHand
                 )
             }
             {
-                user.role === "admin" && (
+                user && user.role === "admin" && (
                      <Link className={`w-full flex items-center px-3 py-4 cursor-pointer ${active === 6 ? "dark:bg-slate-800 bg-white" : "bg-transparent"}`} href={"/admin"}>
                         <MdOutlineAdminPanelSettings size={20} className="dark:text-white text-black" />
                         <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">

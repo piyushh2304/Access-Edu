@@ -1,9 +1,10 @@
 "use client";
-import { useLogoutQuery } from "@/redux/features/auth/authApi";
+import { useLogoutMutation } from "@/redux/features/auth/authApi";
 import { FC, useEffect, useState, useRef } from "react";
 import toast from "react-hot-toast";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography } from "@mui/material";
+import { signOut } from "next-auth/react";
 import "react-pro-sidebar/dist/css/styles.css";
 import {
   HomeOutlinedIcon,
@@ -61,9 +62,7 @@ const AdminSidebar = () => {
   const [selected, setSelected] = useState("Dashboard");
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const { isSuccess } = useLogoutQuery(undefined, {
-    skip: !logout ? true : false,
-  });
+  const [logoutCall, { isSuccess }] = useLogoutMutation();
 
   const lmsHeadingRef = useSpeechOnHover<HTMLHeadingElement>('LMS home page link');
   const collapseButtonRef = useSpeechOnHover<HTMLButtonElement>(isCollapsed ? 'Expand sidebar' : 'Collapse sidebar');
@@ -79,19 +78,19 @@ const AdminSidebar = () => {
 
   useEffect(() => setMounted(true), []);
 
-  useEffect(() => {
-    if (isSuccess) {
-      toast.success("Logout successful");
-      window.location.reload();
-    }
-  }, [isSuccess]);
-
   if (!mounted) {
     return null;
   }
 
-  const logoutHandler = () => {
-    setLogout(true);
+  const logoutHandler = async () => {
+    try {
+      await logoutCall(undefined).unwrap();
+      await signOut({ redirect: false });
+      window.location.href = "/";
+    } catch (error) {
+      // Fallback redirect if anything fails
+      window.location.href = "/";
+    }
   };
 
   return (

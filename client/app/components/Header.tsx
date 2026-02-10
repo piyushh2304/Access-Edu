@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 import Image from "next/image";
 import avatar from "../../public/assets/avatar.jpg";
 import { useSession } from "next-auth/react";
-import { useLogoutQuery, useSocialAuthMutation,} from "@/redux/features/auth/authApi";
+import { useLogoutMutation, useSocialAuthMutation,} from "@/redux/features/auth/authApi";
 import toast from "react-hot-toast";
 import useAuth from "@/app/hooks/useAuth";
 import { useSpeech } from "../SpeechProvider"; // Import useSpeech
@@ -157,10 +157,14 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
   } = useAuth();
   const { data } = useSession();
   const [socialAuth, { isSuccess, error }] = useSocialAuthMutation();
-  const [logout, setLogout] = useState(false);
-  const {} = useLogoutQuery(undefined, {
-    skip: !logout ? true : false,
-  });
+  const [logout, { isSuccess: logoutSuccess }] = useLogoutMutation();
+
+  useEffect(() => {
+    if (logoutSuccess) {
+        toast.success("Logout successfully");
+        router.push("/");
+    }
+  }, [logoutSuccess, router]);
 
   // Use ref to track isTTSActive to avoid closure issues
   const isTTSActiveRef = useRef(isTTSActive);
