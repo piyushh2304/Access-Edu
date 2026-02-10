@@ -59,7 +59,34 @@ const generateCourse = (index: number) => {
         ratings: parseFloat((Math.random() * (5 - 3) + 3).toFixed(1)),
         purchased: Math.floor(Math.random() * 1000),
         reviews: [],
-        courseData: []
+        courseData: [
+            {
+                title: `${category} Basics`,
+                description: `Introduction to ${category}. This lesson covers the fundamental concepts you need to get started.`,
+                videoUrl: "https://www.youtube.com/watch?v=Get7wqXYe38", // Fallback URL
+                videoThumbnail: {
+                    public_id: `lesson-${index}-1`,
+                    url: `/${randomImage}`
+                },
+                videoSection: "Module 1: Introduction",
+                videoLength: 15,
+                muxAssetId: "ds02G5v7reAt9p5V9p8n9V9p", // Placeholder Mux Asset ID
+                playbackId: "ds02G5v7reAt9p5V9p8n9V9p", // Placeholder Playback ID
+            },
+            {
+                title: `Advanced ${category}`,
+                description: `Deep dive into advanced topics of ${category}. We will build a small project in this lesson.`,
+                videoUrl: "https://www.youtube.com/watch?v=Get7wqXYe38",
+                videoThumbnail: {
+                    public_id: `lesson-${index}-2`,
+                    url: `/${randomImage}`
+                },
+                videoSection: "Module 2: Advanced Topics",
+                videoLength: 45,
+                muxAssetId: "ds02G5v7reAt9p5V9p8n9V9p",
+                playbackId: "ds02G5v7reAt9p5V9p8n9V9p",
+            }
+        ]
     };
 };
 

@@ -177,42 +177,39 @@ export const getCourseByUser = CatchAsyncError(
         );
       }
 
-      const course = await CourseModel.findById(courseId);
+      const course = await CourseModel.findById(courseId).lean();
 
       const content = await Promise.all(
-        course?.courseData.map(async (item: any) => {
+        (course?.courseData as any[] || []).map(async (item: any) => {
           if (item.muxAssetId) {
             console.log(`[DEBUG] Processing asset: ${item.muxAssetId} for course content: ${item.title}`);
 
-            // Priority 1: Use stored playbackId if it exists (manually set or previously fetched)
+            // Priority 1: Use stored playbackId if it exists
             if (item.playbackId && item.playbackId.trim()) {
               console.log(`[DEBUG] Using stored playback ID for asset ${item.muxAssetId}: ${item.playbackId}`);
-              item.videoId = item.playbackId; // Frontend will use this as playbackId prop
-              item.videoUrl = `https://stream.mux.com/${item.playbackId}.m3u8`;
+              item.videoId = item.playbackId.trim();
+              item.videoUrl = `https://stream.mux.com/${item.playbackId.trim()}.m3u8`;
               return item;
             }
 
-            // Priority 2: Try to get playback ID from Mux API if not stored
+            // Priority 2: Try to get playback ID from Mux API
             console.log(`[DEBUG] Fetching playback ID from Mux for asset: ${item.muxAssetId}`);
             const playbackData = await fetchPlaybackIdFromMux(item.muxAssetId);
 
             if (playbackData) {
               console.log(`[DEBUG] Received playback data for asset ${item.muxAssetId}:`, playbackData);
-              // Set playbackId and videoId to the actual playback ID value
               item.playbackId = playbackData.playbackId;
               item.playbackPolicy = playbackData.policy;
-              item.videoId = playbackData.playbackId; // Frontend will use this as playbackId prop
+              item.videoId = playbackData.playbackId;
               item.videoUrl = playbackData.videoUrl;
             } else {
-              // Fallback to asset ID if playback ID not available
               console.warn(`[DEBUG] Failed to fetch playback ID for asset ${item.muxAssetId}, using asset ID as fallback`);
-              // Note: This fallback might be incorrect if the frontend expects a playback ID, not an asset ID
               item.videoUrl = generateMuxVideoUrl(item.muxAssetId);
               item.videoId = item.muxAssetId;
             }
           }
           return item;
-        }) || []
+        })
       );
 
       console.log("[DEBUG] Final content payload:", JSON.stringify(content, null, 2));

@@ -14,10 +14,7 @@ import { useProfileVoiceCommands } from "../../hooks/useProfileVoiceCommands";
 import { useSpeech } from "../../SpeechProvider";
 
 
-const ProfileInfo = dynamic(() => import("./ProfileInfo"), {
-  ssr: false,
-  loading: () => <Loader />,
-});
+import ProfileInfo from "./ProfileInfo";
 const ChangePassword = dynamic(() => import("./ChangePassword"), {
   ssr: false,
   loading: () => <Loader />,

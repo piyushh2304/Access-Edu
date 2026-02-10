@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { FC, useEffect, useState, useRef } from "react";
 import NavItems from "../utils/NavItems";
 import { ThemeSwitcher } from "../utils/ThemeSwitcher";
@@ -42,7 +43,7 @@ const ProfileImageLink: FC<{
   
   // Merge refs using callback
   const combinedRef = React.useCallback((node: HTMLAnchorElement | null) => {
-    profileLinkRef.current = node;
+    (profileLinkRef as any).current = node;
     if (profileImageRef) {
       (profileImageRef as React.MutableRefObject<HTMLAnchorElement | null>).current = node;
     }
@@ -80,7 +81,7 @@ const ProfileButton: FC<{
   
   // Merge refs using callback
   const combinedRef = React.useCallback((node: HTMLButtonElement | null) => {
-    buttonRef.current = node;
+    (buttonRef as any).current = node;
     if (profileButtonRef) {
       (profileButtonRef as React.MutableRefObject<HTMLButtonElement | null>).current = node;
     }
@@ -134,6 +135,7 @@ const MobileProfileImageLink: FC<{
 };
 
 const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
+  const router = useRouter();
   const [active, setActive] = useState(false);
   const [openSidebar, setOpenSidebar] = useState(false);
   const menuButtonRef = React.useRef<HTMLButtonElement>(null);
@@ -142,7 +144,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
   const { isTTSActive, toggleTTS, isVoiceControlActive, toggleVoiceControl, isVoiceListening, isVoiceAuthActive, toggleVoiceAuth } = useSpeech(); // Use the useSpeech hook
   const skipLinkRef = React.useRef<HTMLAnchorElement>(null);
   const logoRef = React.useRef<HTMLAnchorElement>(null);
-  const themeSwitcherRef = React.useRef<HTMLButtonElement>(null);
+  const themeSwitcherRef = React.useRef<HTMLDivElement>(null);
   const ttsToggleButtonRef = React.useRef<HTMLButtonElement>(null);
   const profileButtonRef = React.useRef<HTMLButtonElement>(null);
   const profileImageRef = React.useRef<HTMLAnchorElement>(null);
@@ -172,33 +174,43 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
     const getIsActive = () => isTTSActiveRef.current;
 
     if (skipLinkRef.current) {
-      cleanups.push(attachSpeechEvents(skipLinkRef.current, 'Skip to main content', getIsActive));
+      const cleanup = attachSpeechEvents(skipLinkRef.current, 'Skip to main content', getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
     if (logoRef.current) {
-      cleanups.push(attachSpeechEvents(logoRef.current, 'Access Edu home page link', getIsActive));
+      const cleanup = attachSpeechEvents(logoRef.current, 'Access Edu home page link', getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
     if (themeSwitcherRef.current) {
-      cleanups.push(attachSpeechEvents(themeSwitcherRef.current, 'Toggle theme, current theme is ' + (document.documentElement.classList.contains('dark') ? 'dark' : 'light'), getIsActive));
+      const cleanup = attachSpeechEvents(themeSwitcherRef.current, 'Toggle theme, current theme is ' + (document.documentElement.classList.contains('dark') ? 'dark' : 'light'), getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
     if (ttsToggleButtonRef.current) {
       const buttonText = `Text to speech is currently ${isTTSActiveRef.current ? 'on' : 'off'}. Click to toggle.`;
-      cleanups.push(attachSpeechEvents(ttsToggleButtonRef.current, buttonText, getIsActive));
+      const cleanup = attachSpeechEvents(ttsToggleButtonRef.current, buttonText, getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
     if (profileButtonRef.current) {
-      cleanups.push(attachSpeechEvents(profileButtonRef.current, 'Open login or profile menu', getIsActive));
+      const cleanup = attachSpeechEvents(profileButtonRef.current, 'Open login or profile menu', getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
     if (profileImageRef.current && userData?.user?.name) {
-      cleanups.push(attachSpeechEvents(profileImageRef.current, `View profile of ${userData.user.name}`, getIsActive));
+      const cleanup = attachSpeechEvents(profileImageRef.current, `View profile of ${userData.user.name}`, getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
     if (menuButtonRef.current) {
-      cleanups.push(attachSpeechEvents(menuButtonRef.current, 'Open mobile menu', getIsActive));
+      const cleanup = attachSpeechEvents(menuButtonRef.current, 'Open mobile menu', getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
     if (closeButtonRef.current) {
-      cleanups.push(attachSpeechEvents(closeButtonRef.current, 'Close mobile menu', getIsActive));
+      const cleanup = attachSpeechEvents(closeButtonRef.current, 'Close mobile menu', getIsActive);
+      if (cleanup) cleanups.push(cleanup);
     }
 
     return () => {
-      cleanups.forEach(cleanup => cleanup?.());
+      cleanups.forEach(cleanup => {
+          if (typeof cleanup === "function") cleanup();
+      });
     };
   }, [isTTSActive, userData]); // Re-attach if TTS active state or user data changes
 
@@ -212,11 +224,16 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
           avatar: data?.user?.image,
         });
       }
-      if (data === null && isSuccess) {
-          toast.success("Login successfully");
+      if (isSuccess) {
+        toast.success("Login successfully");
+        if (userData?.user?.role === "admin") {
+          router.push("/admin");
+        } else {
+          router.push("/profile");
+        }
       }
     }
-  }, [data, userData, isLoading]);
+  }, [data, userData, isLoading, isSuccess]);
 
   useEffect(() => {
     if (openSidebar) {
