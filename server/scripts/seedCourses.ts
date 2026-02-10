@@ -13,7 +13,7 @@ const dbUrl = process.env.MONGO_URI || "";
 
 // Images available in public folder
 const courseImages = [
-    "course-images-101@2x.png", "course-images-102@2x.png", "course-images-10@2x.png",
+    "course-images-102@2x.png", "course-images-10@2x.png",
     "course-images-110@2x.png", "course-images-111@2x.png", "course-images-112@2x.png",
     "course-images-113@2x.png", "course-images-114@2x.png", "course-images-115@2x.png",
     "course-images-116@2x.png", "course-images-11@2x.png", "course-images-121@2x.png",

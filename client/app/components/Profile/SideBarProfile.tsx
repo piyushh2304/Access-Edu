@@ -103,35 +103,29 @@ const SideBarProfile: FC<Props> = ({ user, active, avatar, setActive, logoutHand
                 text="Change Password"
                 ttsLabel="Change Password menu item"
             />
-            <MenuItem
-                active={active}
-                itemActive={3}
-                onClick={() => setActive(3)}
-                icon={<SiCoursera size={20} className='dark:text-white text-black' />}
-                text="Enrolled Courses"
-                ttsLabel="Enrolled Courses menu item"
-            />
             {
-                (user?.role === "admin" || user?.role === "Admin") &&
-                (
-                    <MenuItem
-                        active={active}
-                        itemActive={6}
-                        onClick={() => {}}
-                        icon={<MdOutlineAdminPanelSettings size={20} className='dark:text-white text-black' />}
-                        text="Admin Dashboard"
-                        isLink={true}
-                        href="/admin"
-                        ttsLabel="Admin Dashboard link"
-                    />
+                user.role !== "admin" && (
+                    <div className="w-full flex items-center px-3 py-4 cursor-pointer  dark:bg-transparent bg-transparent"
+                        onClick={() => setActive(3)}>
+                        <SiCoursera size={20} className="dark:text-white text-black" />
+                        <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
+                            Enrolled Courses
+                        </h5>
+                    </div>
+                )
+            }
+            {
+                user.role === "admin" && (
+                     <Link className={`w-full flex items-center px-3 py-4 cursor-pointer ${active === 6 ? "dark:bg-slate-800 bg-white" : "bg-transparent"}`} href={"/admin"}>
+                        <MdOutlineAdminPanelSettings size={20} className="dark:text-white text-black" />
+                        <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
+                            Admin Dashboard
+                        </h5>
+                    </Link>
                 )
             }
             {/* Debug: Show role info */}
-            {user?.role && (
-                <div className="px-3 py-2 text-xs text-gray-500">
-                    Current role: {user.role}
-                </div>
-            )}
+
             <MenuItem
                 active={active}
                 itemActive={4}
